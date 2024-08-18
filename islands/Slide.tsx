@@ -40,8 +40,8 @@ function Slide(
             "background-color: " + backgroundColor
         }>
             <div class="container w-full">
-                <div class="px-4 md:px-0 grid gap-7 md:grid-cols-2">
-                    <div class="flex flex-col justify-center order-2 md:order-1">
+                <div class="px-4 lg:px-0 grid gap-7 lg:grid-cols-2">
+                    <div class="flex flex-col justify-center order-2 lg:order-1">
                         <figure class="pb-7">
                             <Image
                                 width={140}
@@ -54,16 +54,15 @@ function Slide(
                                 loading="lazy"
                             />
                         </figure>
-                        <h1 class="text-5xl font-semibold text-white pb-7">{title}</h1>
+                        <h1 class="text-3xl md:text-5xl font-semibold text-white pb-7">{title}</h1>
                         <p class="text-white pb-7">{description}</p>
                         <div class="flex space-x-4">
                             {button?.map((button) => (
-                                <Button key={button
-                                    .id} href={button.href} text={button.text} />
+                                <Button key={button.id} href={button.href} text={button.text} />
                             ))}
                         </div>
                     </div>
-                    <figure class="flex justify-end order-1 md:order-2">
+                    <figure class="flex justify-end order-1 lg:order-2">
                         <Image
                             width={710}
                             height={590}
