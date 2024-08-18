@@ -3,13 +3,7 @@ import Carousel from "site/islands/Carousel.tsx";
 
 export interface Props {
   banners?: Banners[];
-  layout?: {
-    numberOfSliders?: {
-      mobile?: 1 | 2 | 3 | 4 | 5;
-      desktop?: 1 | 2 | 3 | 4 | 5;
-    };
-    showArrows?: boolean;
-  };
+  layout?: string;
 }
 
 export interface CTA {
@@ -38,13 +32,7 @@ const DEFAULT_IMAGE =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/772e246e-1959-46ac-a309-3f25ab20af6f";
 
 function HeroBanner({
-  layout = {
-    numberOfSliders: {
-      mobile: 1,
-      desktop: 3,
-    },
-    showArrows: false,
-  } as Props["layout"],
+  layout= 'layout-1',
   banners = [
     {
       title: "Here's an intermediate size heading you can edit",
@@ -76,6 +64,7 @@ function HeroBanner({
         automatic={true}
         data={banners}
         showArrows={false}
+        layout={layout}
     />
   );
 }

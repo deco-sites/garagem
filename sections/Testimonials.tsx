@@ -1,7 +1,7 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../components/ui/Icon.tsx";
-import Slider from "../components/ui/Slider.tsx";
+// import Slider from "../components/ui/Slider.tsx";
 import { useId } from "../sdk/useId.ts";
 
 /**
@@ -148,14 +148,14 @@ function Dots({ slides, interval = 0 }: Props) {
       <ul class="carousel col-span-full gap-3 z-10">
         {slides?.map((_, index) => (
           <li class="carousel-item">
-            <Slider.Dot index={index}>
+            {/* <Slider.Dot index={index}>
               <div class="py-5">
                 <div
                   class="w-2 h-2 rounded-full group-disabled:animate-progress dot"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
-            </Slider.Dot>
+            </Slider.Dot> */}
           </li>
         ))}
       </ul>
@@ -167,7 +167,7 @@ function Buttons() {
   return (
     <div class="flex gap-4">
       <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
-        <Slider.PrevButton class="flex items-center justify-center btn-circle border border-base-content">
+        {/* <Slider.PrevButton class="flex items-center justify-center btn-circle border border-base-content">
           <Icon
             class="text-base-content"
             size={24}
@@ -184,7 +184,7 @@ function Buttons() {
             id="ArrowLeft"
             strokeWidth={3}
           />
-        </Slider.NextButton>
+        </Slider.NextButton> */}
       </div>
     </div>
   );
@@ -202,7 +202,7 @@ function Carousel(props: Props) {
       <h2 class="text-4xl leading-snug lg:w-1/2 pb-12 lg:pb-16">
         {title}
       </h2>
-      <Slider
+      {/* <Slider
         class="carousel carousel-center w-full col-span-full row-span-full gap-6"
         rootId={id}
         interval={interval && interval * 1e3}
@@ -219,7 +219,7 @@ function Carousel(props: Props) {
             />
           </Slider.Item>
         ))}
-      </Slider>
+      </Slider> */}
 
       <div class="flex justify-between pt-8 lg:px-16">
         {props.dots && <Dots slides={slides} interval={interval} />}{" "}
