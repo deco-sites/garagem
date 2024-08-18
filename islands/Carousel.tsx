@@ -40,6 +40,7 @@ type CarouselProps = {
     class?: string;
     showArrows?: boolean;
     data?: SlideProps["data"][];
+    layout?: string;
 };
 
 const Carousel = (props: CarouselProps) => {
@@ -179,6 +180,7 @@ return (
     {SLIDE_DATA.map((item, idx) => (
         <Slide
             data={item}
+            layout={props.layout}
             key={idx}
             class={slideClasses(idx)}
         />
