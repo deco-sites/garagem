@@ -124,8 +124,8 @@ const goToSlide = (slide_index = 0) => {
 };
 
 const DotsNavigation = () => (
-    <div className="container">
-        <div class={"slide_nav z-30 absolute bottom-16 flex justify-center gap-8"}>
+    <div class={"slide_nav w-full z-30 absolute bottom-10  lg:bottom-16"}>
+        <div className="container px-4 lg:px-0 flex gap-6">
             {SLIDE_DATA.map((_item, idx) => {
                 return (
                 <button
@@ -158,21 +158,21 @@ return (
     {SHOW_ARROW_NAVIGATION &&
         <div>
             <button
-            class={`left-0 ${CHEVRON_STYLE}`}
-            style="top: calc(50% - 20px)"
-            onClick={() => chevronClick(previousSlide)}
-        >
-            <IconCircleChevronsLeft class="w-10 h-10" aria-hidden="true" />
-            <span class="sr-only">Previous slide</span>
-        </button>
-        <button
-            class={`right-0 ${CHEVRON_STYLE}`}
-            style="top: calc(50% - 20px)"
-            onClick={() => chevronClick(nextSlide)}
-        >
-            <IconCircleChevronsRight class="w-10 h-10" aria-hidden="true" />
-            <span class="sr-only">Next slide</span>
-        </button>
+                class={`left-0 ${CHEVRON_STYLE}`}
+                style="top: calc(50% - 20px)"
+                onClick={() => chevronClick(previousSlide)}
+            >
+                <IconCircleChevronsLeft class="w-10 h-10" aria-hidden="true" />
+                <span class="sr-only">Previous slide</span>
+            </button>
+            <button
+                class={`right-0 ${CHEVRON_STYLE}`}
+                style="top: calc(50% - 20px)"
+                onClick={() => chevronClick(nextSlide)}
+            >
+                <IconCircleChevronsRight class="w-10 h-10" aria-hidden="true" />
+                <span class="sr-only">Next slide</span>
+            </button>
         </div>
     }
     

@@ -1,9 +1,7 @@
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
-import { useId } from "site/sdk/useId.ts";
 import Carousel from "site/islands/Carousel.tsx";
 
 export interface Props {
-  title?: string;
   banners?: Banners[];
   layout?: {
     numberOfSliders?: {
@@ -12,7 +10,6 @@ export interface Props {
     };
     showArrows?: boolean;
   };
-  data?: Banners[]; // Add the data property
 }
 
 export interface CTA {
@@ -41,7 +38,6 @@ const DEFAULT_IMAGE =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/772e246e-1959-46ac-a309-3f25ab20af6f";
 
 function HeroBanner({
-  title = "HeroBanner",
   layout = {
     numberOfSliders: {
       mobile: 1,
