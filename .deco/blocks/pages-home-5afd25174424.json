@@ -6,20 +6,83 @@
       "__resolveType": "Header"
     },
     {
-      "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p>Click here to tweak this text however you want.</p>",
-      "cta": [],
-      "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "cta": [
+        {
+          "style": "Outline"
+        }
+      ],
+      "banners": [
+        {
+          "placement": "left",
+          "cta": [],
+          "button": [
+            {
+              "style": "Outline",
+              "href": "#conheca",
+              "text": "Começar agora"
+            }
+          ],
+          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/aeb1a1b5-3791-4018-94cc-54e8914d5c0f",
+          "title": "A única ferramenta  que o corretor precisa",
+          "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/89d7b811-2b9a-42bb-9c65-147aea7f97e4",
+          "disableSpacing": {
+            "top": false,
+            "bottom": false
+          },
+          "backgroundColor": "#2A2A2A"
+        },
+        {
+          "placement": "left",
+          "button": [
+            {
+              "style": "Outline",
+              "href": "#conheca",
+              "text": "Começar agora"
+            }
+          ],
+          "cta": [],
+          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/aeb1a1b5-3791-4018-94cc-54e8914d5c0f",
+          "title": "A única ferramenta  que o corretor precisa",
+          "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/89d7b811-2b9a-42bb-9c65-147aea7f97e4",
+          "disableSpacing": {
+            "top": false,
+            "bottom": false
+          },
+          "backgroundColor": "#C5DFFC"
+        },
+        {
+          "placement": "left",
+          "button": [
+            {
+              "style": "Outline",
+              "href": "#conheca",
+              "text": "Começar agora"
+            }
+          ],
+          "cta": [],
+          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/aeb1a1b5-3791-4018-94cc-54e8914d5c0f",
+          "title": "A única ferramenta  que o corretor precisa",
+          "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/89d7b811-2b9a-42bb-9c65-147aea7f97e4",
+          "disableSpacing": {
+            "top": false,
+            "bottom": false
+          },
+          "backgroundColor": "#E5DECF"
+        }
+      ],
+      "layout": {
+        "numberOfSliders": {
+          "mobile": 1,
+          "desktop": 1
+        }
+      }
     },
     {
       "__resolveType": "site/sections/Logos.tsx"
-    },
-    {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx"
-    },
-    {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx",
-      "placement": "right"
     },
     {
       "__resolveType": "site/sections/BlogPosts.tsx"
