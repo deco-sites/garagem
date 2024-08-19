@@ -1,5 +1,6 @@
 {
   "imports": {
+    "types/": "./types/",
     "site/": "./",
     "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.75.2/",
     "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.48.0/",

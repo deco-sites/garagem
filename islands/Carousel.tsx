@@ -1,4 +1,3 @@
-import { asset } from "$fresh/runtime.ts";
 import { useSignal } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
 import IconCircleChevronsRight from "https://deno.land/x/tabler_icons_tsx@0.0.6/tsx/circle-chevrons-right.tsx";
@@ -44,16 +43,15 @@ type CarouselProps = {
 };
 
 const Carousel = (props: CarouselProps) => {
-const SLIDE_DATA = props.data ?? [];
-const NAVIGATION_COLOR = `hover:text-gray-300 text-primary`;
-const CHEVRON_STYLE =
-    `absolute z-30 w-10 h-10 ${NAVIGATION_COLOR} cursor-pointer`;
-const SHOW_ARROW_NAVIGATION = props.showArrows ?? true;
-const SHOW_NAVIGATION = props.showNavigation ?? true;
-const SLIDE_INTERVAL = props.interval ? props.interval : 3500;
-const currentSlide = useSignal(props.currentSlide ? props.currentSlide : 0);
-const automatic = useSignal(props.automatic ?? true);
-const slideshowRef = useRef<HTMLDivElement>(null);
+    const SLIDE_DATA = props.data ?? [];
+    const NAVIGATION_COLOR = `hover:text-gray-300 text-primary`;
+    const CHEVRON_STYLE = `absolute z-30 w-10 h-10 ${NAVIGATION_COLOR} cursor-pointer`;
+    const SHOW_ARROW_NAVIGATION = props.showArrows ?? false;
+    const SHOW_NAVIGATION = props.showNavigation ?? false;
+    const SLIDE_INTERVAL = props.interval ?? 3.5;
+    const currentSlide = useSignal(props.currentSlide ?? 0);
+    const automatic = useSignal(props.automatic ?? true);
+    const slideshowRef = useRef<HTMLDivElement>(null);
 
 const slideClasses = (idx = 0) => {
     let outgoingSlide = currentSlide.value - 1;
@@ -93,7 +91,7 @@ const chevronClick = (doCallback = () => {}) => {
 useEffect(() => {
     const interval = setInterval(() => {
         if (automatic.value) nextSlide();
-    }, SLIDE_INTERVAL);
+    }, SLIDE_INTERVAL * 1000);
     return () => clearInterval(interval);
 }, []);
 
@@ -139,7 +137,7 @@ const DotsNavigation = () => (
                     <span class="sr-only">Go to slide {idx}</span>
                     {idx === currentSlide.value
                     ? <span class={`not-sr-only block w-20 h-1.5 rounded-lg animate-progress bg-white origin-left-right`} 
-                        style={{animation: `progress ${SLIDE_INTERVAL / 1000}s linear infinite`}}></span>
+                        style={{animation: `progress ${SLIDE_INTERVAL}s linear infinite`}}></span>
                     : <span class="not-sr-only block w-20 h-1.5 rounded-lg"></span>}
                 </button>
                 );
@@ -154,6 +152,7 @@ return (
         class={`slideshow relative flex-1 flex-end p-0 overflow-hidden ${
             props.class ?? ""
         }`}
+        aria-label="Slideshow"
         tabIndex={0}
     >
     {SHOW_ARROW_NAVIGATION &&
@@ -188,6 +187,7 @@ return (
     { SHOW_NAVIGATION && <DotsNavigation /> }
         <Slide
             data={SLIDE_DATA[0]}
+            layout={props.layout}
             class="opacity-0 pointer-events-none"
             key={SLIDE_DATA.length}
         />

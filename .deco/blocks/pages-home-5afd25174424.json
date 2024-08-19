@@ -6,90 +6,74 @@
       "__resolveType": "Header"
     },
     {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx",
-      "cta": [
-        {
-          "style": "Outline"
-        }
-      ],
+      "__resolveType": "site/sections/HeroBanner.tsx",
       "banners": [
         {
+          "backgroundColor": "#2A2A2A",
           "placement": "left",
-          "cta": [],
           "button": [
             {
               "style": "Outline",
-              "href": "#conheca",
+              "href": "#",
               "text": "Começar agora"
             }
           ],
-          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/aeb1a1b5-3791-4018-94cc-54e8914d5c0f",
+          "cta": [],
+          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab",
           "title": "A única ferramenta  que o corretor precisa",
           "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/89d7b811-2b9a-42bb-9c65-147aea7f97e4",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a",
           "disableSpacing": {
-            "top": false,
-            "bottom": false
-          },
-          "backgroundColor": "#2A2A2A"
+            "top": false
+          }
         },
         {
+          "backgroundColor": "#C5DFFC",
           "placement": "left",
           "button": [
             {
               "style": "Outline",
-              "href": "#conheca",
+              "href": "#",
               "text": "Começar agora"
             }
           ],
           "cta": [],
-          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/aeb1a1b5-3791-4018-94cc-54e8914d5c0f",
           "title": "A única ferramenta  que o corretor precisa",
           "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/89d7b811-2b9a-42bb-9c65-147aea7f97e4",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a",
           "disableSpacing": {
-            "top": false,
-            "bottom": false
+            "top": false
           },
-          "backgroundColor": "#C5DFFC"
+          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab"
         },
         {
+          "backgroundColor": "#E5DECF",
           "placement": "left",
           "button": [
             {
               "style": "Outline",
-              "href": "#conheca",
+              "href": "#",
               "text": "Começar agora"
             }
           ],
           "cta": [],
-          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/aeb1a1b5-3791-4018-94cc-54e8914d5c0f",
+          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab",
           "title": "A única ferramenta  que o corretor precisa",
           "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/89d7b811-2b9a-42bb-9c65-147aea7f97e4",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a",
           "disableSpacing": {
-            "top": false,
-            "bottom": false
-          },
-          "backgroundColor": "#E5DECF"
+            "top": false
+          }
         }
       ],
-      "layout": {
-        "numberOfSliders": {
-          "mobile": 1,
-          "desktop": 1
-        }
+      "layout": "Default",
+      "setup": {
+        "layout": "HeroBanner",
+        "dots": true,
+        "autoplay": true,
+        "interval": 3.5,
+        "startAt": 0
       }
-    },
-    {
-      "__resolveType": "site/sections/Logos.tsx"
-    },
-    {
-      "__resolveType": "site/sections/BlogPosts.tsx"
-    },
-    {
-      "__resolveType": "site/sections/Testimonials.tsx",
-      "arrows": true
     },
     {
       "__resolveType": "site/sections/Faq.tsx"
