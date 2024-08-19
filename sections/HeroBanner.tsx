@@ -1,9 +1,38 @@
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
 import Carousel from "site/islands/Carousel.tsx";
 
+interface SliderSetup {
+  /** @description Slider layout definition (default: HeroBanner) */
+  layout?: "HeroBanner" | "Features" | "List";
+  /**
+   * @title Interval
+   * @description Time (in seconds) between slide changes (default: 3.5)
+   */
+  interval?: number;
+  /**
+   * @title Show arrows
+   * @description Show arrows to navigate through the images (default: false)
+  */
+  arrows?: boolean;
+  /**
+   * @title Show dots
+   * @description Show dots to navigate through the images (default: false)
+  */
+  dots?: boolean;
+  /**
+   * @title Autoplay
+   * @description Defines if the carousel should start autoplaying (default: true)
+  */
+  autoplay?: boolean;
+  /**
+   * @title Start at
+   * @description Index of the slide to start at (default: 0) counting from 0
+  */
+  startAt?: number;
+}
 export interface Props {
   banners?: Banners[];
-  layout?: string;
+  setup?: SliderSetup;
 }
 
 export interface CTA {
@@ -19,7 +48,6 @@ export interface Banners {
   title?: string;
   description?: string;
   image?: ImageWidget;
-  placement?: "left" | "right";
   button?: CTA[];
   cta?: CTA[];
   disableSpacing?: {
@@ -32,14 +60,13 @@ const DEFAULT_IMAGE =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/772e246e-1959-46ac-a309-3f25ab20af6f";
 
 function HeroBanner({
-  layout= 'layout-1',
+  setup: { layout, interval, arrows, dots, autoplay, startAt } = {},
   banners = [
     {
       title: "Here's an intermediate size heading you can edit",
       description: "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
       tagline: "Tagline",
       image: DEFAULT_IMAGE,
-      placement: "left",
       disableSpacing: {
         top: false,
         bottom: false,
@@ -59,12 +86,13 @@ function HeroBanner({
   return (
     <Carousel
         class="relative"
-        currentSlide={0}
-        interval={5000}
-        automatic={true}
+        currentSlide={startAt}
+        interval={interval}
+        automatic={autoplay}
         data={banners}
-        showArrows={false}
+        showArrows={arrows}
         layout={layout}
+        showNavigation={dots}
     />
   );
 }

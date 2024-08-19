@@ -39,7 +39,7 @@ function Slide(
 
     return (
         <>
-            {layout === "layout-1" && (
+            {layout === "HeroBanner" && (
                 <div key={key} class={`${otherProps.class} pt-24 pb-20`} style={
                     "background-color: " + backgroundColor
                 }>
@@ -82,7 +82,7 @@ function Slide(
                     </div>   
                 </div>
             )}
-            {layout === "layout-2" && (
+            {layout === "Features" && (
                 <div></div>
             )}
         </>
