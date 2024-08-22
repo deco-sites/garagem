@@ -1,10 +1,12 @@
+import IconArrowDown from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/arrow-down.tsx"
 interface Props {
     href: string;
     text: string;
+    icon: boolean;
 }
 
 function Button(
-  { href, text, ...otherProps }: Props,
+  { href, text, icon, ...otherProps }: Props,
 ) {
   return (
     <a
@@ -12,9 +14,9 @@ function Button(
         href={href}
         className={`py-2.5 px-4 rounded-lg text-primary 
             bg-white text-primary text-sm
-            font-semibold shadow-custom`}
+            font-semibold shadow-custom flex items-center justify-between`}
     >
-      {text}
+      {icon && <IconArrowDown />} {text}
     </a>
   );
 }

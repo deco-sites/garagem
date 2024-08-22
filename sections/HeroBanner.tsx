@@ -87,7 +87,7 @@ function HeroBanner({
     <HeroCarousel
         class="relative overflow-hidden"
         interval={interval}
-        automatic={false}
+        automatic={autoplay}
         data={banners}
         showArrows={arrows}
         layout={layout}
