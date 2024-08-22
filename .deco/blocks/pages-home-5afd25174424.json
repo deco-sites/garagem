@@ -83,7 +83,8 @@
             "button": [
               {
                 "href": "#",
-                "text": "Saiba mais"
+                "text": "Saiba mais",
+                "icon": true
               }
             ],
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
@@ -95,7 +96,8 @@
             "button": [
               {
                 "text": "Saiba mais",
-                "href": "#"
+                "href": "#",
+                "icon": true
               }
             ],
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
@@ -107,7 +109,8 @@
             "button": [
               {
                 "href": "#",
-                "text": "Saiba mais"
+                "text": "Saiba mais",
+                "icon": true
               }
             ],
             "title": "Feche mais negócios",

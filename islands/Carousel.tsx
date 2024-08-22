@@ -1,7 +1,7 @@
 import { useSignal } from "@preact/signals";
 import { useEffect, useRef, useState } from "preact/hooks";
-import IconCircleChevronsRight from "https://deno.land/x/tabler_icons_tsx@0.0.6/tsx/circle-chevrons-right.tsx";
-import IconCircleChevronsLeft from "https://deno.land/x/tabler_icons_tsx@0.0.6/tsx/circle-chevrons-left.tsx";
+import IconArrowRight from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/arrow-right.tsx"
+import IconArrowLeft from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/arrow-left.tsx"
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Button from "site/components/ui/Button.tsx";
@@ -11,6 +11,13 @@ export interface CTA {
   href: string;
   text: string;
   style?: "Outline" | "Ghost";
+}
+
+interface Button {
+  id?: string;
+  href: string;
+  text: string;
+  icon: boolean;
 }
 
 type SlideProps = {
@@ -25,7 +32,7 @@ type SlideProps = {
     description?: string;
     image?: ImageWidget;
     placement?: "left" | "right";
-    button?: CTA[];
+    button?: Button[];
     cta?: CTA[];
     disableSpacing?: {
       top?: boolean;
@@ -52,8 +59,8 @@ const Slide = (props: SlideProps) => {
   const { backgroundColor, tagline, title, image, description, button } = data;
   if (props.class === undefined) props.class = "";
   return (
-    <div key={key} className={`${props.class} w-96 min-`}>
-        <div className="flex flex-col p-6 rounded-xl" style={"background-color: " + backgroundColor}>
+    <div key={key} className={`${props.class} w-96 flex self-auto justify-stretch`}>
+        <div className="flex flex-col p-6 rounded-xl flex self-auto justify-between" style={"background-color: " + backgroundColor}>
             <figure class="pb-7">
                 <Image
                     width={308}
@@ -70,7 +77,7 @@ const Slide = (props: SlideProps) => {
             <p class="text-primary text-base pb-7">{description}</p>
             <div class="flex space-x-4 ">
                 {button?.map((button) => (
-                    <Button key={button.id} href={button.href} text={button.text} />
+                    <Button key={button.id} href={button.href} text={button.text} icon={button.icon}/>
                 ))}
             </div>
         </div>
@@ -81,7 +88,7 @@ const Slide = (props: SlideProps) => {
 const Carousel = (props: CarouselProps) => {
   const SLIDE_DATA = props.data ?? [];
   const NAVIGATION_COLOR = `hover:text-gray-300 text-primary`;
-  const CHEVRON_STYLE = `absolute z-30 w-10 h-10 ${NAVIGATION_COLOR} cursor-pointer`;
+  const CHEVRON_STYLE = `w-16 h-14 ${NAVIGATION_COLOR} cursor-pointer border border-gray-300 rounded-lg`;
   const SHOW_ARROW_NAVIGATION = props.showArrows ?? false;
   const SHOW_NAVIGATION = props.showNavigation ?? false;
   const SLIDE_INTERVAL = props.interval ?? 3.5;
@@ -234,29 +241,27 @@ const Carousel = (props: CarouselProps) => {
       tabIndex={0}
     >
       {SHOW_ARROW_NAVIGATION && (
-        <div>
+        <div class="position left-0 absolute flex justify-between gap-x-5 z-40" style="top: calc(75% - 20px)">
           <button
-            class={`left-0 ${CHEVRON_STYLE} z-40`}
-            style="top: calc(50% - 20px)"
+            class={`${CHEVRON_STYLE} z-40 flex items-center justify-center`}
             onClick={() => chevronClick(previousSlide)}
           >
-            <IconCircleChevronsLeft class="w-10 h-10" aria-hidden="true" />
+            <IconArrowLeft class="w-10 h-10" aria-hidden="true" />
             <span class="sr-only">Previous slide</span>
           </button>
           <button
-            class={`right-0 ${CHEVRON_STYLE} z-40`}
-            style="top: calc(50% - 20px)"
+            class={`${CHEVRON_STYLE} z-40 flex items-center justify-center`}
             onClick={() => chevronClick(nextSlide)}
           >
-            <IconCircleChevronsRight class="w-10 h-10" aria-hidden="true" />
+            <IconArrowRight class="w-10 h-10" aria-hidden="true" />
             <span class="sr-only">Next slide</span>
           </button>
         </div>
       )}
 
-      <div class={`relative overflow-hidden flex gap-x-4 mx-auto`}>
+      <div class={`relative overflow-hidden flex self-auto justify-stretch gap-x-4 mx-auto`}>
         {SLIDE_DATA.map((slide, idx) => (
-          <div key={idx} class={`slide-item-${idx} transition-all 
+          <div key={idx} class={`slide-item-${idx} transition-all flex self-auto justify-stretch 
           ease-in-out duration-700 transform transform-gpu
             ${slideClasses(slideVisibility[idx], idx)}
           `}>
