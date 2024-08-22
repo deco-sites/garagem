@@ -40,10 +40,9 @@ export interface Props {
 function FeaturesDetail(
     { section, content, setup }: { section: Section, content: FeaturesDetail; setup: SliderSetup },
 ){
-    const { title, backgroundColor } = section.content;
     return (
-        <div class="py-24" style={{ backgroundColor: backgroundColor }}>
-            <h1 class="md:text-5xl font-semibold">{title}</h1>
+        <div class="py-24">
+            <h1 class="md:text-5xl font-semibold"></h1>
         </div>
     );
 }
