@@ -8,6 +8,9 @@ export default {
   theme: {
     container: { center: true },
     extend: {
+      borderRadius: {
+        'xl': '2rem',
+      },
       animation: {
         sliding: "sliding 30s linear infinite",
         progress: 'progress infinite 4s linear',

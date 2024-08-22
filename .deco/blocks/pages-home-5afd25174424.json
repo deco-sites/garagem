@@ -76,6 +76,103 @@
       }
     },
     {
+      "__resolveType": "site/sections/Features.tsx",
+      "slide": {
+        "content": [
+          {
+            "button": [
+              {
+                "href": "#",
+                "text": "Saiba mais"
+              }
+            ],
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
+            "title": "Organize seus clientes",
+            "description": "Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos.",
+            "backgroundColor": "#EBEFF2"
+          },
+          {
+            "button": [
+              {
+                "text": "Saiba mais",
+                "href": "#"
+              }
+            ],
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
+            "title": "Divulgue seus imóveis",
+            "description": "Cadastre os seus imóveis - aluguel, venda, primário ou secundário. Adapte os campos e dados para sua operação. Seu site será automaticamente gerado e todas opções de integração para divulgação disponíveis: Vivareal, Zap, QuintoAndar, Facebook ou Instagram.",
+            "backgroundColor": "#C5DFFC"
+          },
+          {
+            "button": [
+              {
+                "href": "#",
+                "text": "Saiba mais"
+              }
+            ],
+            "title": "Feche mais negócios",
+            "description": "Foque no relacionamento com seus clientes e não se preocupe com o restante. Automatize mensagens de rotina e utilize serviços complementares como fotográfo, assessoria jurídica e  assessoria de financiamento.",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/8ba546a3-6efb-414d-a365-105710aac2e8",
+            "backgroundColor": "#E5DECF"
+          }
+        ]
+      },
+      "section": {
+        "content": {
+          "title": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta."
+        }
+      },
+      "setup": {
+        "layout": "Features",
+        "interval": 3.5,
+        "arrows": true,
+        "autoplay": false,
+        "startAt": 0
+      },
+      "content": [
+        {
+          "content": [
+            {
+              "backgroundColor": "#C5DFFC",
+              "button": [
+                {
+                  "href": "#",
+                  "text": "Saiba mais"
+                }
+              ],
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
+              "title": "Organize seus clientes",
+              "description": "Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos."
+            },
+            {
+              "backgroundColor": "#C5DFFC",
+              "button": [
+                {
+                  "href": "#",
+                  "text": "Saiba mais"
+                }
+              ],
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
+              "title": "Organize seus clientes",
+              "description": "Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos."
+            },
+            {
+              "backgroundColor": "#E5DECF",
+              "button": [
+                {
+                  "href": "#",
+                  "text": "Saiba mais"
+                }
+              ],
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
+              "title": "Organize seus clientes",
+              "description": "Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/Faq.tsx"
     },
     {

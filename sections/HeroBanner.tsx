@@ -1,5 +1,5 @@
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
-import Carousel from "site/islands/Carousel.tsx";
+import HeroCarousel from "site/islands/HeroCarousel.tsx";
 
 interface SliderSetup {
   /** @description Slider layout definition (default: HeroBanner) */
@@ -84,11 +84,10 @@ function HeroBanner({
   }
 
   return (
-    <Carousel
-        class="relative"
-        currentSlide={startAt}
+    <HeroCarousel
+        class="relative overflow-hidden"
         interval={interval}
-        automatic={autoplay}
+        automatic={false}
         data={banners}
         showArrows={arrows}
         layout={layout}
