@@ -45,7 +45,9 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
-
+  .scale-3d {
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
   .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
