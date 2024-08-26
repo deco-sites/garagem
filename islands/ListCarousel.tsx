@@ -204,7 +204,7 @@ return (
     }
         <div className="flex flex-col lg:flex-row gap-10">
             
-            <div className="w-full lg:w-1/3" style={layout === true ? {order: 2} : {order: 1}}>
+            <div className="w-full lg:w-1/3 md:py-4" style={layout === true ? {order: 2} : {order: 1}}>
                 {SHOW_NAVIGATION && <DotsNavigation />}
             </div>
             
