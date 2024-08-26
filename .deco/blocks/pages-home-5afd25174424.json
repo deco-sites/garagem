@@ -350,7 +350,15 @@
       }
     },
     {
-      "__resolveType": "Footer"
+      "__resolveType": "site/sections/Footer.tsx",
+      "links": [],
+      "bottomLinks": [],
+      "social": [
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/c8c41eaf-62bb-404e-8657-b48a7a8fbe31"
+        }
+      ],
+      "subscribe": {}
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
