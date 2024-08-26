@@ -59,7 +59,7 @@ const Slide = (props: SlideProps) => {
   const { backgroundColor, tagline, title, image, description, button } = data;
   if (props.class === undefined) props.class = "";
   return (
-    <div key={key} className={`${props.class} w-96 flex self-auto justify-stretch`}>
+    <div key={key} className={`${props.class} w-72 md:w-96 flex self-auto justify-stretch`}>
         <div className="flex flex-col p-6 rounded-xl flex self-auto justify-between" style={"background-color: " + backgroundColor}>
             <figure class="pb-7">
                 <Image
@@ -241,7 +241,7 @@ const Carousel = (props: CarouselProps) => {
       tabIndex={0}
     >
       {SHOW_ARROW_NAVIGATION && (
-        <div class="position left-0 absolute flex justify-between gap-x-5 z-40" style="top: calc(75% - 20px)">
+        <div class="position left-0 top-full pt-4 lg:pt-0 2xl:pt-4 lg:top-3/4 2xl:top-2/3 absolute flex justify-between gap-x-5 z-40">
           <button
             class={`${CHEVRON_STYLE} z-40 flex items-center justify-center`}
             onClick={() => chevronClick(previousSlide)}

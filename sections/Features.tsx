@@ -73,9 +73,9 @@ function Features(
   return (
     <div className="px-4 py-24 overflow-hidden">
       <div className="container mx-auto">
-        <div className="grid sm:grid-cols-1 lg:grid-cols-2 items-center relative">
-          <div className="section-content">
-            <h2 class="md:text-5xl font-semibold">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 items-center relative">
+          <div className="section-content max-w-72">
+            <h2 class="text-3xl md:text-5xl font-semibold">
               {section.content?.title}
             </h2>
           </div>
