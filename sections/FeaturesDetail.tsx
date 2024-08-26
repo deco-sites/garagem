@@ -53,7 +53,7 @@ function FeaturesDetail(
                         data={content}
                         layout={setup.layout}
                         interval={setup.interval}
-                        automatic={false}
+                        automatic={setup.autoplay}
                     />
                 </div>
             </div>
