@@ -1,55 +1,68 @@
 import { useSignal } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
-import IconCircleChevronsRight from "https://deno.land/x/tabler_icons_tsx@0.0.6/tsx/circle-chevrons-right.tsx";
-import IconCircleChevronsLeft from "https://deno.land/x/tabler_icons_tsx@0.0.6/tsx/circle-chevrons-left.tsx";
-import Slide from "site/components/ui/Slide.tsx";
-import type { ImageWidget, Color } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
-export interface CTA {
-  id?: string;
-  href: string;
-  text: string;
-  style?: "Outline" | "Ghost";
-}
 
 type SlideProps = {
     class?: string;
     key?: number;
+    layout?: string;
     data: {
-        backgroundColor?: Color;
-        tagline?: ImageWidget;
-        title?: string;
-        description?: string;
-        image?: ImageWidget;
-        placement?: "left" | "right";
-        button?: CTA[];
-        cta?: CTA[];
-        disableSpacing?: {
-            top?: boolean;
-            bottom?: boolean;
-        };
+        imageDesktop?: string;
+        imageMobile?: string;
+        icon?: string;
+        text?: string;
     };
 };
 
 type CarouselProps = {
-    showNavigation?: boolean;
     interval?: number;
-    currentSlide?: number;
     automatic?: boolean;
-    class?: string;
-    showArrows?: boolean;
-    data?: SlideProps["data"][];
     layout?: string;
+    data?: SlideProps["data"][];
 };
 
-const HeroCarousel = (props: CarouselProps) => {
+const Slide = (props: SlideProps) => {
+  const { key, data } = props;
+  const { imageDesktop, imageMobile, icon, text } = data;
+
+  if (props.class === undefined) props.class = "";
+  return (
+    <div key={key} className={`${props.class}`}>
+        <figure>
+            <Image
+                width={793}
+                height={470}
+                class="object-fit w-full z-10 hidden lg:block"
+                sizes="(max-width: 793px) 100vw, 30vw"
+                src={imageDesktop ?? ""}
+                alt={imageDesktop}
+                decoding="async"
+                loading="lazy"
+            />
+            <Image
+                width={320}
+                height={280}
+                class="object-fit w-full z-10 lg:hidden"
+                sizes="(max-width: 320px) 100vw, 30vw"
+                src={imageMobile ?? ""}
+                alt={imageMobile}
+                decoding="async"
+                loading="lazy"
+            />
+        </figure>
+    </div>
+  );
+};
+
+const ListCarousel = (props: CarouselProps) => {
     const SLIDE_DATA = props.data ?? [];
-    const NAVIGATION_COLOR = `hover:text-gray-300 text-primary`;
+    const NAVIGATION_COLOR = `text-primary`;
     const CHEVRON_STYLE = `absolute z-30 w-10 h-10 ${NAVIGATION_COLOR} cursor-pointer`;
-    const SHOW_ARROW_NAVIGATION = props.showArrows ?? false;
-    const SHOW_NAVIGATION = props.showNavigation ?? false;
+    const SHOW_ARROW_NAVIGATION = false;
+    const SHOW_NAVIGATION = true;
     const SLIDE_INTERVAL = props.interval ?? 3.5;
-    const currentSlide = useSignal(props.currentSlide ?? 0);
+    const currentSlide = useSignal(0);
     const automatic = useSignal(props.automatic ?? true);
     const slideshowRef = useRef<HTMLDivElement>(null);
 
@@ -123,22 +136,37 @@ const goToSlide = (slide_index = 0) => {
 };
 
 const DotsNavigation = () => (
-    <div class={"slide_nav w-full z-30 absolute bottom-10  lg:bottom-16"}>
-        <div className="container px-4 lg:px-0 flex gap-6">
+    <div class={"slide_nav z-30 h-full"}>
+        <div className="container h-full lg:px-0 flex flex-col justify-between gap-6">
             {SLIDE_DATA.map((_item, idx) => {
                 return (
                 <button
-                    class={`${NAVIGATION_COLOR} relative focus:outline-none overflow-hidden rounded-lg bg-white bg-opacity-30`}
+                    class={`${NAVIGATION_COLOR} ${idx !== currentSlide.value ? 'opacity-50' : 'opacity-100'} relative focus:outline-none overflow-hidden flex flex-col items-center h-full gap-8`}
                     onClick={() => {
                         goToSlide(idx);
                     }}
                     key={idx}
                 >
+                    <h3 className="flex gap-6 w-full">
+                        <span className="flex shrink-0 items-center justify-center w-14 h-16 rounded-lg bg-primary">
+                            <Image
+                                width={24}
+                                height={24}
+                                class="object-fit z-10"
+                                sizes="(max-width: 180px) 100vw, 30vw"
+                                src={_item.icon ?? ""}
+                                alt={_item.icon}
+                                decoding="async"
+                                loading="lazy"
+                            />
+                        </span>
+                        <span class="shrink text-left">{_item.text}</span>
+                    </h3>
                     <span class="sr-only">Go to slide {idx}</span>
                     {idx === currentSlide.value
-                    ? <span class={`not-sr-only block w-20 h-1.5 rounded-lg animate-progress bg-white origin-left-right`} 
-                        style={{animation: `progress ${SLIDE_INTERVAL}s linear infinite`}}></span>
-                    : <span class="not-sr-only block w-20 h-1.5 rounded-lg"></span>}
+                    ? <span class={`not-sr-only relative flex items-center w-full h-px border border-gray-400 rounded-lg origin-left-right animated-before my-1`} 
+                        style={{ '--slide-interval': `${SLIDE_INTERVAL}s` }}></span>
+                    : <span class="not-sr-only block w-full h-1.5 rounded-lg"></span>}
                 </button>
                 );
             })}
@@ -149,9 +177,7 @@ const DotsNavigation = () => (
 return (
     <div
         ref={slideshowRef}
-        class={`slideshow relative flex-1 flex-end p-0 overflow-hidden ${
-            props.class ?? ""
-        }`}
+        class={`slideshow relative display p-0 overflow-hidden`}
         aria-label="Slideshow"
         tabIndex={0}
     >
@@ -162,7 +188,7 @@ return (
                 style="top: calc(50% - 20px)"
                 onClick={() => chevronClick(previousSlide)}
             >
-                <IconCircleChevronsLeft class="w-10 h-10" aria-hidden="true" />
+                
                 <span class="sr-only">Previous slide</span>
             </button>
             <button
@@ -170,29 +196,27 @@ return (
                 style="top: calc(50% - 20px)"
                 onClick={() => chevronClick(nextSlide)}
             >
-                <IconCircleChevronsRight class="w-10 h-10" aria-hidden="true" />
+                
                 <span class="sr-only">Next slide</span>
             </button>
         </div>
     }
-    
-    {SLIDE_DATA.map((item, idx) => (
-        <Slide
-            data={item}
-            layout={props.layout}
-            key={idx}
-            class={slideClasses(idx)}
-        />
-    ))}
-    { SHOW_NAVIGATION && <DotsNavigation /> }
-        <Slide
-            data={SLIDE_DATA[0]}
-            layout={props.layout}
-            class="opacity-0 pointer-events-none"
-            key={SLIDE_DATA.length}
-        />
+        <div className="flex flex-col lg:flex-row gap-10">
+            
+            <div className="w-full order-2 lg:order-1 lg:w-1/3">
+                {SHOW_NAVIGATION && <DotsNavigation />}
+            </div>
+            
+            <div class={`relative overflow-hidden w-full order-1 lg:order-2 lg:w-2/3 flex self-auto h-[252px] md:h-[438px] lg:h-[390px] xl:h-[491px] 2xl:h-[600px]`}>
+                {SLIDE_DATA.map((slide, idx) => (
+                    <div key={idx} class={slideClasses(idx)}>
+                        <Slide key={idx} data={slide} layout={props.layout}/>
+                    </div>
+                ))}
+            </div>
+        </div>
     </div>
 );
 };
 
-export default HeroCarousel;
+export default ListCarousel;

@@ -59,14 +59,6 @@
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
   },
-  "/.deco/blocks/blog.json": {
-    "blockType": "apps",
-    "__resolveType": "decohub/apps/blog.ts"
-  },
-  "/.deco/blocks/decohub.json": {
-    "blockType": "apps",
-    "__resolveType": "site/apps/decohub.ts"
-  },
   "/.deco/blocks/hero.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Hero.tsx"
@@ -108,5 +100,13 @@
   "/.deco/blocks/Preview%20site%2Fsections%2FHeader.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Header.tsx"
+  },
+  "/.deco/blocks/deco-htmx.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/deco/htmx.ts"
+  },
+  "/.deco/blocks/deco-blog.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/deco/blog.ts"
   }
 }
