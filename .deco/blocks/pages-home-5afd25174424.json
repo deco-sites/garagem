@@ -355,10 +355,26 @@
       "bottomLinks": [],
       "social": [
         {
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/c8c41eaf-62bb-404e-8657-b48a7a8fbe31"
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/c8c41eaf-62bb-404e-8657-b48a7a8fbe31",
+          "href": "https://linkedin.com",
+          "label": "Linkedin"
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3ee8e84c-ec9d-4c71-8239-0591697c4687",
+          "href": "https://facebook.com",
+          "label": "Facebook"
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/a4c12e94-1ea2-4b2c-9f94-59b30d6c3ed6",
+          "href": "https://instagram.com",
+          "label": "Instagram"
         }
       ],
-      "subscribe": {}
+      "subscribe": {},
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab",
+        "alt": "Garagem"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

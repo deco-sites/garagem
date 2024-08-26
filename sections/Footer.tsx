@@ -41,7 +41,7 @@ export default function Footer({
 }: Props) {
   return (
     <div className="bg-primary">
-      <div className="container grid grid-cols-2 py-10">
+      <div className="container grid gap-6 md:gap-0 md:grid-cols-2 py-10 px-4 md:px-0">
         <div className="flex flex-col">
           <figure>
 				<Image
@@ -54,8 +54,8 @@ export default function Footer({
             <figcaption className="text-white text-xs pt-1.5">A única ferramenta que o corretor precisa</figcaption>
           </figure>
         </div>
-        <div className="flex flex-col">
-          <ul>
+        <div className="flex flex-col gap-3">
+          <ul class="flex gap-1.5">
             {social?.map((item, idx) => (
 				<li key={idx}>
 					<a href={item.href} target="_blank" rel="noreferrer">
