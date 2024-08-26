@@ -24,7 +24,7 @@ type CarouselProps = {
 
 const Slide = (props: SlideProps) => {
   const { key, data } = props;
-  const { imageDesktop, imageMobile, icon, text } = data;
+  const { imageDesktop, imageMobile } = data;
 
   if (props.class === undefined) props.class = "";
   return (
@@ -65,6 +65,7 @@ const ListCarousel = (props: CarouselProps) => {
     const currentSlide = useSignal(0);
     const automatic = useSignal(props.automatic ?? true);
     const slideshowRef = useRef<HTMLDivElement>(null);
+    const layout = props.layout === 'left' ? true : false;
 
 const slideClasses = (idx = 0) => {
     let outgoingSlide = currentSlide.value - 1;
@@ -160,7 +161,7 @@ const DotsNavigation = () => (
                                 loading="lazy"
                             />
                         </span>
-                        <span class="shrink text-left">{_item.text}</span>
+                        <span class="shrink text-left text-lg font-medium leading-5">{_item.text}</span>
                     </h3>
                     <span class="sr-only">Go to slide {idx}</span>
                     {idx === currentSlide.value
@@ -203,14 +204,14 @@ return (
     }
         <div className="flex flex-col lg:flex-row gap-10">
             
-            <div className="w-full order-2 lg:order-1 lg:w-1/3">
+            <div className="w-full lg:w-1/3" style={layout === true ? {order: 2} : {order: 1}}>
                 {SHOW_NAVIGATION && <DotsNavigation />}
             </div>
             
-            <div class={`relative overflow-hidden w-full order-1 lg:order-2 lg:w-2/3 flex self-auto h-[252px] md:h-[438px] lg:h-[390px] xl:h-[491px] 2xl:h-[600px]`}>
+            <div class={`relative overflow-hidden w-full lg:order-1 lg:w-2/3 flex self-auto h-[252px] md:h-[438px] lg:h-[390px] xl:h-[491px] 2xl:h-[600px]`} style={layout === true ? {order: 1} : ''}>
                 {SLIDE_DATA.map((slide, idx) => (
                     <div key={idx} class={slideClasses(idx)}>
-                        <Slide key={idx} data={slide} layout={props.layout}/>
+                        <Slide key={idx} data={slide} />
                     </div>
                 ))}
             </div>

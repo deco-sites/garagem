@@ -41,11 +41,12 @@ function FeaturesDetail(
 ){
     const { title, backgroundColor } = section.content ?? {};
     const { content } = slide;
+
     
     return (
         <div class="py-24" style={`background-color: ${backgroundColor}`}>
-            <div className="container px-4 lg:px-0">
-                <h1 class=" text-3xl md:text-5xl font-semibold">
+            <div className="container px-4 lg:px-0 flex flex-col">
+                <h1 class="text-3xl md:text-5xl font-semibold">
                     {title}
                 </h1>
                 <div className="py-14">
