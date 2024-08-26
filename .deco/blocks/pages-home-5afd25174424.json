@@ -180,7 +180,7 @@
       "section": {
         "content": {
           "title": "Administração de anúncios de imóveis, site próprio e integrações para gerar mais leads em uma única ferramenta",
-          "backgroundColor": "#C5DFFC"
+          "backgroundColor": "#EBEFF2"
         }
       },
       "content": {
@@ -238,7 +238,7 @@
       "section": {
         "content": {
           "title": "Eficiência e agilidade com automações e serviços disponíveis para fechar mais negócios ",
-          "backgroundColor": "#E5DECF"
+          "backgroundColor": "#C5DFFC"
         }
       },
       "content": {
@@ -263,6 +263,64 @@
       "setup": {
         "interval": 5,
         "layout": "left",
+        "autoplay": true
+      },
+      "slide": {
+        "content": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Configure seu funil e separe contatos como achar mais adequado",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Tenha controle sobre quem é sincronizado",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "site/sections/FeaturesDetail.tsx",
+      "section": {
+        "content": {
+          "title": "Eficiência e agilidade com automações e serviços disponíveis para fechar mais negócios ",
+          "backgroundColor": "#E5DECF"
+        }
+      },
+      "content": {
+        "content": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Configure seu funil e separe contatos como achar mais adequado"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Tenha controle sobre quem é sincronizado"
+          }
+        ]
+      },
+      "setup": {
+        "interval": 5,
+        "layout": "right",
         "autoplay": true
       },
       "slide": {
