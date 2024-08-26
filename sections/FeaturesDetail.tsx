@@ -1,7 +1,5 @@
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 import ListCarousel  from "site/islands/ListCarousel.tsx";
-
 export interface Section {
     content?: {
         title?: string;
@@ -10,9 +8,11 @@ export interface Section {
 }
 export interface FeaturesDetail {
     content?: {
-        image?: ImageWidget;
+        imageDesktop?: ImageWidget;
+        imageMobile?: ImageWidget;
         icon?: ImageWidget;
         text?: string;
+
     }[];
 }
 
@@ -27,22 +27,36 @@ export interface SliderSetup {
     * @description Time (in seconds) between slide changes (default: 3.5)
     */
     interval?: number;
-    /** @description Content alignment */
-    layout?: "left" | "right";
+    layout?: 'left' | 'right';
 }
 
 export interface Props {
     section?: Section[];
-    content?: FeaturesDetail[];
+    slide?: FeaturesDetail[];
     setup?: SliderSetup[];
 }
 
 function FeaturesDetail(
-    { section, content, setup }: { section: Section, content: FeaturesDetail; setup: SliderSetup },
+    { section, setup, slide }: { section: Section, slide: FeaturesDetail, setup: SliderSetup},
 ){
+    const { title, backgroundColor } = section.content ?? {};
+    const { content } = slide;
+    
     return (
-        <div class="py-24">
-            <h1 class="md:text-5xl font-semibold"></h1>
+        <div class="py-24" style={`background-color: ${backgroundColor}`}>
+            <div className="container px-4 lg:px-0">
+                <h1 class=" text-3xl md:text-5xl font-semibold">
+                    {title}
+                </h1>
+                <div className="py-14">
+                    <ListCarousel
+                        data={content}
+                        layout={setup.layout}
+                        interval={setup.interval}
+                        automatic={false}
+                    />
+                </div>
+            </div>
         </div>
     );
 }
