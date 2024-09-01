@@ -117,6 +117,32 @@
             "description": "Foque no relacionamento com seus clientes e não se preocupe com o restante. Automatize mensagens de rotina e utilize serviços complementares como fotográfo, assessoria jurídica e  assessoria de financiamento.",
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/8ba546a3-6efb-414d-a365-105710aac2e8",
             "backgroundColor": "#E5DECF"
+          },
+          {
+            "button": [
+              {
+                "href": "#",
+                "text": "Saiba mais",
+                "icon": true
+              }
+            ],
+            "title": "Feche mais negócios",
+            "description": "Foque no relacionamento com seus clientes e não se preocupe com o restante. Automatize mensagens de rotina e utilize serviços complementares como fotográfo, assessoria jurídica e  assessoria de financiamento.",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/8ba546a3-6efb-414d-a365-105710aac2e8",
+            "backgroundColor": "#E5DECF"
+          },
+          {
+            "button": [
+              {
+                "href": "#",
+                "text": "Saiba mais",
+                "icon": true
+              }
+            ],
+            "title": "Feche mais negócios",
+            "description": "Foque no relacionamento com seus clientes e não se preocupe com o restante. Automatize mensagens de rotina e utilize serviços complementares como fotográfo, assessoria jurídica e  assessoria de financiamento.",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/8ba546a3-6efb-414d-a365-105710aac2e8",
+            "backgroundColor": "#E5DECF"
           }
         ]
       },

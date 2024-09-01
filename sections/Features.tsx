@@ -81,7 +81,7 @@ function Features(
           </div>
           <Carousel
             position="relative"
-            class="flex flex-nowrap items-stretch mx-auto"
+            class="min-h-[758px] md:min-h-[730px]"
             interval={setup.interval}
             automatic={setup.autoplay}
             infinite={false}

@@ -59,7 +59,7 @@ const Slide = (props: SlideProps) => {
   const { backgroundColor, tagline, title, image, description, button } = data;
   if (props.class === undefined) props.class = "";
   return (
-    <div key={key} className={`${props.class} w-72 md:w-96 flex self-auto justify-stretch`}>
+    <div key={key} className={`${props.class} min-h-[758px] md:min-h-[730px] w-72 md:w-96 flex self-auto justify-stretch`}>
         <div className="flex flex-col p-6 rounded-xl flex self-auto justify-between" style={"background-color: " + backgroundColor}>
             <figure class="pb-7">
                 <Image
@@ -94,8 +94,6 @@ const Carousel = (props: CarouselProps) => {
   const SLIDE_INTERVAL = props.interval ?? 3.5;
   const automatic = useSignal(props.automatic ?? true);
   const slideshowRef = useRef<HTMLDivElement>(null);
-  const position = props.position ?? "absolute";
-  const isInfinite = props.infinite ?? true
 
   useEffect(() => {
     updateSlideVisibility();
@@ -122,10 +120,7 @@ const Carousel = (props: CarouselProps) => {
   const updateSlideVisibility = () => {
     setSlideVisibility((prevVisibility) =>
       prevVisibility.map((_, index) => ({
-        visible:
-          index === SLIDE_DATA.length - 1 ||
-          !shownSlides.has(index) ||
-          index === currentSlide,
+        visible: index >= currentSlide, // Mantém visível apenas os slides após o currentSlide
         position: index - currentSlide,
       }))
     );
@@ -166,15 +161,20 @@ const Carousel = (props: CarouselProps) => {
     return () => clearInterval(interval);
   }, [currentSlide]);
 
-  const slideClasses = (idx: any, index: any) => {
+  const slideClasses = (idx: { visible: boolean; position: number; }) => {
     const TRANSITION_CLASS = () => {
-      if (idx.visible === false) return `opacity-0 translate-x-full scale-3d`;
-      if (idx.position === 0 && idx.position !== index) return '-translate-x-full';
-      
-      return 'translate-x-0 scale-100 opacity-100';
-    }
-    return `${TRANSITION_CLASS()}`;
-  }
+      if (!idx.visible) return { opacity: 0, transform: 'translateX(100%) scale3d(0.3, 0.3, 0.3)' };
+      if (idx.position === 0) return { transform: 'translateX(0) scale(1)', opacity: 1 }; // Slide atual
+      if (idx.position > 0) return { transform: `translateX(${idx.position * 110}%)`, opacity: 1 }; // Próximos slides
+      return { transform: `translateX(-${Math.abs(idx.position) * 100}%)`, opacity: 1 }; // Slides anteriores
+    };
+    
+    return {
+      position: 'absolute',
+      transition: 'all 0.7s ease-in-out',
+      ...TRANSITION_CLASS(),
+    };
+  };
 
   const ArrowKeyNavigation = () => {
     const keydownHandler = (event: KeyboardEvent) => {
@@ -259,12 +259,9 @@ const Carousel = (props: CarouselProps) => {
         </div>
       )}
 
-      <div class={`relative overflow-hidden flex self-auto justify-stretch gap-x-4 mx-auto`}>
+      <div>
         {SLIDE_DATA.map((slide, idx) => (
-          <div key={idx} class={`slide-item-${idx} transition-all flex self-auto justify-stretch 
-          ease-in-out duration-700 transform transform-gpu
-            ${slideClasses(slideVisibility[idx], idx)}
-          `}>
+          <div key={idx} style={slideClasses(slideVisibility[idx])}>
             <Slide key={idx} data={slide} />
           </div>
         ))}
