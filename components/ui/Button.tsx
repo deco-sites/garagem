@@ -3,6 +3,7 @@ interface Props {
     href: string;
     text: string;
     icon: boolean;
+    class?: string;
 }
 
 function Button(
@@ -12,7 +13,7 @@ function Button(
     <a
         {...otherProps}
         href={href}
-        className={`py-2.5 px-4 rounded-lg text-primary 
+        class={`py-2.5 px-4 rounded-lg text-primary 
             bg-white text-primary text-sm
             font-semibold shadow-custom flex items-center justify-between`}
     >
