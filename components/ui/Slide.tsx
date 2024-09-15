@@ -62,7 +62,7 @@ function Slide(
                                 <p class="text-white pb-7">{description}</p>
                                 <div class="flex space-x-4">
                                     {button?.map((button) => (
-                                        <Button key={button.id} href={button.href} text={button.text} />
+                                        <Button key={button.id} href={button.href} text={button.text} icon={false}/>
                                     ))}
                                 </div>
                             </div>
