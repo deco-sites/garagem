@@ -1,5 +1,7 @@
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
 import Button from "site/components/ui/Button.tsx";
+import Modal from "site/components/ui/Modal.tsx";
+import Signup from "site/components/ui/Signup.tsx";
 export interface CTA {
   id?: string;
   href: string;
@@ -127,7 +129,7 @@ export default function Tools({
                 <div class="p-8 pl-2.5 text-lg bg-[#E5DECF] text-[#99907B] font-bold text-center">Para Imobiliárias</div>
             </div>
             <div class="grid grid-cols-3">
-                <div class="p-2 pl-2.5 text-base text-left text-black font-semibold">Titulo</div>
+                <div class="p-2 pl-2.5 text-base md:text-xl text-left text-black font-semibold">Titulo</div>
                 <div/>
                 <div/>
             </div>
@@ -145,33 +147,8 @@ export default function Tools({
                 <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">Corretores autônomos</div>
                 <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#E5DECF] text-center">Para Imobiliárias</div>
             </div>
-            {/* <table class="border-collapse table-fixed w-full text-sm">
-                <thead>
-                    <tr>
-                        <th class="p-8 pl-2.5 text-lg text-left text-back font-semibold">Titulo</th>
-                        <th class="border-b border-slate-300 p-8 pl-2.5 text-lg bg-[#EBEFF2] text-[#6797CC] font-bold">Corretores autônomos</th>
-                        <th class="border-b border-slate-300 p-8 pl-2.5 text-lg bg-[#E5DECF] text-[#99907B] font-bold">Para Imobiliárias</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="border-b border-slate-300 p-8 pl-2.5 text-base">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                        <td class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">Malcolm Lockyer</td>
-                        <td class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">1961</td>
-                    </tr>
-                    <tr>
-                        <td class="border-b border-slate-300 p-8 pl-2.5 text-base">Witchy Woman</td>
-                        <td class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">The Eagles</td>
-                        <td class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">1972</td>
-                    </tr>
-                    <tr>
-                        <td class="border-b border-slate-300 p-8 pl-2.5 text-base">Shining Star</td>
-                        <td class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">Earth, Wind, and Fire</td>
-                        <td class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">1975</td>
-                    </tr>
-                </tbody>
-            </table> */}
         </div>
+        <Signup />
     </div>
   );
 }
