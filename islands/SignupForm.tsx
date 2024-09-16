@@ -59,7 +59,7 @@ function SignupForm() {
 
   return (
     <form
-		class="px-8 py-5 md:px-10 flex flex-col gap-9"
+		class="px-8 py-5 md:p-10  flex flex-col gap-9"
 		onSubmit={handleSubmit(onSubmit)}
 	>
 		<div
@@ -80,7 +80,7 @@ function SignupForm() {
 								focus:ring-primary`
 								}
 								py-3 px-10 bg-white border shadow-sm
-								placeholder-slate-400 focus:outline-none 
+								placeholder-stone-500 focus:outline-none 
 								focus:border-primary focus:ring-primary
 								block w-full rounded-md sm:text-sm focus:ring-1 
 								disabled:shadow-none mt-1 text-base	
@@ -104,7 +104,7 @@ function SignupForm() {
 									focus:border-red-500 focus:ring-red-500 peer`
 								: `border-slate-300 text-black focus:border-primary focus:ring-primary`}
 								py-3 px-10 bg-white border shadow-sm
-								border-slate-300 placeholder-slate-400 disabled:bg-slate-50
+								border-slate-300 placeholder-stone-500 disabled:bg-slate-50
 								disabled:text-slate-500 disabled:border-slate-200
 								focus:outline-none focus:border-primary focus:ring-primary
 								block w-full rounded-md sm:text-sm focus:ring-1 disabled:shadow-none mt-1 text-base	
@@ -128,7 +128,7 @@ function SignupForm() {
 									focus:border-red-500 focus:ring-red-500 peer`
 								: `border-slate-300 text-black focus:border-primary focus:ring-primary`}
 								py-3 px-10 bg-white border shadow-sm
-								border-slate-300 placeholder-slate-400 disabled:bg-slate-50
+								border-slate-300 placeholder-stone-500 disabled:bg-slate-50
 								disabled:text-slate-500 disabled:border-slate-200
 								focus:outline-none focus:border-primary focus:ring-primary
 								block w-full rounded-md sm:text-sm focus:ring-1 disabled:shadow-none mt-1 text-base	
@@ -152,7 +152,7 @@ function SignupForm() {
 									focus:border-red-500 focus:ring-red-500 peer`
 								: `border-slate-300 text-black focus:border-primary focus:ring-primary`}
 								py-3 px-10 bg-white border shadow-sm
-								border-slate-300 placeholder-slate-400 disabled:bg-slate-50
+								border-slate-300 placeholder-stone-500 disabled:bg-slate-50
 								disabled:text-slate-500 disabled:border-slate-200
 								focus:outline-none focus:border-primary focus:ring-primary
 								block w-full rounded-md sm:text-sm focus:ring-1 disabled:shadow-none mt-1 text-base	
@@ -170,7 +170,7 @@ function SignupForm() {
 				Faturamento mensal*<select 
 					id="faturamentoMensal" 
 					class="p-3 bg-white border border-slate-300 shadow-sm
-					rounded-md w-full mt-1 text-slate-400"
+					rounded-md w-full mt-1 text-stone-500"
 					{...register('faturamentoMensal', {required: true})}
 				>
 					<option
@@ -178,7 +178,7 @@ function SignupForm() {
 						selected
 						disabled  
 						hidden
-						class="placeholder-slate-400"
+						class="placeholder-stone-500"
 					>
 						Escolha uma opção
 					</option>
@@ -218,7 +218,7 @@ function SignupForm() {
 				Carteira de imóvel*<select 
 					id="carteiraImovel" 
 					class="p-3 bg-white border border-slate-300 shadow-sm
-					rounded-md w-full mt-1 text-slate-400"
+					rounded-md w-full mt-1 text-stone-500"
 					{...register('carteiraImovel', {required: true})}
 				>
 					<option
@@ -226,7 +226,7 @@ function SignupForm() {
 						selected
 						disabled  
 						hidden
-						class="placeholder-slate-400"
+						class="placeholder-stone-500"
 					>
 						Escolha uma opção
 					</option>

@@ -1,6 +1,6 @@
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Button from "site/components/ui/Button.tsx";
+import Link from "./Link.tsx";
 
 export interface CTA {
   id?: string;
@@ -62,7 +62,7 @@ function Slide(
                                 <p class="text-white pb-7">{description}</p>
                                 <div class="flex space-x-4">
                                     {button?.map((button) => (
-                                        <Button key={button.id} href={button.href} text={button.text} icon={false}/>
+                                        <Link key={button.id} href={button.href} text={button.text} icon={false}/>
                                     ))}
                                 </div>
                             </div>

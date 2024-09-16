@@ -1,7 +1,6 @@
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
-import Button from "site/components/ui/Button.tsx";
-import Modal from "site/components/ui/Modal.tsx";
-import Signup from "site/components/ui/Signup.tsx";
+import ModalButton from "../islands/ModalButton.tsx";
+
 export interface CTA {
   id?: string;
   href: string;
@@ -11,6 +10,15 @@ export interface CTA {
 export interface CardList {
     icon?: ImageWidget
     text?: string
+}
+
+export interface Features {
+    title?: string;
+    features?: {
+        title?: string;
+        iconOne?: ImageWidget;
+        iconTwo?: ImageWidget;
+    }[];
 }
 
 export interface Cards {
@@ -26,6 +34,7 @@ export interface Props {
     /** @format rich-text */
     title?: string;
     cards?: Cards[];
+    features?: Features[];
 }
 
 export default function Tools({
@@ -96,6 +105,23 @@ export default function Tools({
             },
         },
     ],
+    features = [
+        {
+            title: "Titulo",
+            features: [
+                {
+                    title: "Feature1",
+                    iconOne: "Descrição da feature 1",
+                    iconTwo: "#EBEFF2",
+                },
+                {
+                    title: "Feature2",
+                    iconOne: "Descrição da feature 1",
+                    iconTwo: "#EBEFF2",
+                },
+            ],
+        },
+    ],
 }: Props) {
   return (
     <div class="container mx-auto px-4 pt-14 md:py-24 md:px-0">
@@ -128,27 +154,31 @@ export default function Tools({
                 <div class="p-8 pl-2.5 text-lg bg-[#EBEFF2] text-[#6797CC] font-bold text-center">Corretores autônomos</div>
                 <div class="p-8 pl-2.5 text-lg bg-[#E5DECF] text-[#99907B] font-bold text-center">Para Imobiliárias</div>
             </div>
-            <div class="grid grid-cols-3">
-                <div class="p-2 pl-2.5 text-base md:text-xl text-left text-black font-semibold">Titulo</div>
-                <div/>
-                <div/>
-            </div>
-            <div class="grid grid-cols-3">
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base text-left text-black">Feature1</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">Corretores autônomos</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#E5DECF] text-center">Para Imobiliárias</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base text-left text-black">Feature1</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">Corretores autônomos</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#E5DECF] text-center">Para Imobiliárias</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base text-left text-black">Feature1</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">Corretores autônomos</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#E5DECF] text-center">Para Imobiliárias</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base text-left text-black">Feature1</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center">Corretores autônomos</div>
-                <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#E5DECF] text-center">Para Imobiliárias</div>
-            </div>
+            {
+                features.map((feature, index) => (
+                    <>
+                        <div key={index} class="grid grid-cols-3">
+                            <div class="p-2 pl-2.5 text-base md:text-xl text-left text-black font-semibold">{feature.title}</div>
+                            <div/>
+                            <div/>
+                        </div>
+                        <>
+                            {feature?.features?.map((item, index) => (
+                                <div key={index} class="grid grid-cols-3">
+                                    <div class="border-b border-slate-300 p-8 pl-2.5 text-base text-left text-black">{item.title}</div>
+                                    <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#EBEFF2] text-center flex items-center justify-center">
+                                        <img src={item.iconOne} alt={item.title} width={24} height={24}/>
+                                    </div>
+                                    <div class="border-b border-slate-300 p-8 pl-2.5 text-base bg-[#E5DECF] text-center flex items-center justify-center">
+                                        <img src={item.iconTwo} alt={item.title} width={24} height={24}/>
+                                    </div>
+                                </div>
+                            ))}
+                        </>
+                    </>
+                ))
+            }
         </div>
-        <Signup />
     </div>
   );
 }

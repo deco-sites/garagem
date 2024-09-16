@@ -7,6 +7,7 @@ import * as $api_signup from "./routes/api/signup.ts";
 import * as $Carousel from "./islands/Carousel.tsx";
 import * as $HeroCarousel from "./islands/HeroCarousel.tsx";
 import * as $ListCarousel from "./islands/ListCarousel.tsx";
+import * as $ModalButton from "./islands/ModalButton.tsx";
 import * as $Select from "./islands/Select.tsx";
 import * as $SignupForm from "./islands/SignupForm.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -20,6 +21,7 @@ const manifest = {
     "./islands/Carousel.tsx": $Carousel,
     "./islands/HeroCarousel.tsx": $HeroCarousel,
     "./islands/ListCarousel.tsx": $ListCarousel,
+    "./islands/ModalButton.tsx": $ModalButton,
     "./islands/Select.tsx": $Select,
     "./islands/SignupForm.tsx": $SignupForm,
   },

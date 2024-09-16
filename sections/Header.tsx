@@ -1,6 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Button from "site/components/ui/Button.tsx";
+import ModalButton from "site/islands/ModalButton.tsx";
 
 export interface CTA {
   id?: string;
@@ -36,8 +36,8 @@ export default function Header({
       <div className="container flex justify-between items-center">
         <Image src={logo.src ?? ""} alt={logo.alt} width={61} height={61}/>
         <div className="flex space-x-4">
-          {navigation.buttons.map((button) => (
-            <Button key={button.id} href={button.href} text={button.text} />
+          {navigation.buttons.map((button, idx) => (
+            <ModalButton text={button.text} icon={false} key={idx}/>
           ))}
         </div>
       </div>
