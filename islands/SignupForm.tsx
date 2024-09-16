@@ -1,6 +1,8 @@
+import { useState } from 'preact/hooks';
 import { useForm, SubmitHandler } from "react-hook-form"
-import { yupResolver } from 'npm:@hookform/resolvers/yup';
+import { yupResolver } from 'npm:@hookform/resolvers/yup'
 import { string, object, InferType } from 'npm:yup'
+
 import "preact/debug";
 
 const emailRgx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -31,28 +33,29 @@ const SignupSchema = object().shape({
 type FormData = InferType<typeof SignupSchema>;
 
 function SignupForm() {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
-	mode: 'onChange',
-    resolver: yupResolver(SignupSchema)
-  });
+	const [successMessage, setSuccessMessage] = useState<string | null>(null);
+	const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
+		mode: 'onChange',
+		resolver: yupResolver(SignupSchema)
+	});
 
-	const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
+  	const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
 		try {
-			const response = await fetch('https://hooks.zapier.com/hooks/catch/16331030/24oinhf', {
+			const response = await fetch('/api/proxy', {
 				method: 'POST',
 				headers: {
-					'Access-Control-Allow-Origin': '*',
 					'Content-Type': 'application/json',
 				},
 				body: JSON.stringify(data),
 			});
 
 			if (!response.ok) {
-				throw new Error('Falha ao enviar os dados!');
+				throw new Error('Failed to send data!');
 			}
-
+			setSuccessMessage('Formulário enviado com sucesso!');
 			console.log('Dados enviados com sucesso:', data);
 		} catch (error) {
+			setSuccessMessage('Erro ao enviar os dados, tente novamente.');
 			console.error('Erro ao enviar os dados:', error);
 		}
 	};
@@ -174,7 +177,7 @@ function SignupForm() {
 					{...register('faturamentoMensal', {required: true})}
 				>
 					<option
-						value=""
+						value="nenhum"
 						selected
 						disabled  
 						hidden
@@ -183,27 +186,27 @@ function SignupForm() {
 						Escolha uma opção
 					</option>
 					<option 
-						value="R$10.000,00"
+						value="1000000"
 					>
 						Até R$10.000,00
 					</option>
 					<option 
-						value="50.000,00"
+						value="5000000"
 					>
 						Até R$50.000,00
 					</option>
 					<option 
-						value="100.000,00"
+						value="10000000"
 					>
 						Até R$100.000,00
 					</option>
 					<option 
-						value="200.000,00"
+						value="20000000"
 					>
 						Até R$200.000,00
 					</option>
 					<option 
-						value="200.000,00"
+						value="20000000"
 					>
 						Mais de R$200.000,00
 					</option>
@@ -222,7 +225,7 @@ function SignupForm() {
 					{...register('carteiraImovel', {required: true})}
 				>
 					<option
-						value=""
+						value="nenhum"
 						selected
 						disabled  
 						hidden
@@ -266,15 +269,24 @@ function SignupForm() {
 				</p>
 			</label>
     	</div>
-      	<button 
-			type="submit" 
-			class="py-3.5 px-4 rounded-lg
-			bg-primary text-white text-sm
-			font-semibold shadow-custom
-			w-44 text-center self-end"
-		>
-			Cadastrar
-		</button>
+		<div class="flex justify-between">
+			<div class="w-6/12">
+				{successMessage && (
+					<p class={`${successMessage.includes('sucesso') ? 'text-green-500' : 'text-red-500'}`}>
+						{successMessage}
+					</p>
+				)}
+			</div>
+			<button 
+				type="submit"
+				class="py-3.5 px-4 rounded-lg
+				bg-primary text-white text-sm
+				font-semibold shadow-custom
+				w-44 text-center self-end"
+			>
+				Cadastrar
+			</button>
+		</div>
     </form>
   );
 }
