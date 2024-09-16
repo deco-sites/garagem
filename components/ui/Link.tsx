@@ -6,7 +6,7 @@ interface Props {
     class?: string;
 }
 
-function Button(
+function Link(
   { href, text, icon, ...otherProps }: Props,
 ) {
   return (
@@ -22,4 +22,4 @@ function Button(
   );
 }
 
-export default Button;
+export default Link;

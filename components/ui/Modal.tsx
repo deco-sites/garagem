@@ -1,14 +1,13 @@
-import { JSX } from "preact/jsx-runtime";
+import SignupForm from "site/islands/SignupForm.tsx";
+import IconX from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/x.tsx"
 
 interface ModalProps {
-  title: string;
-  show: boolean;
+  isOpen: boolean;
   onClose: () => void;
   closeText?: string;
-  children: JSX.Element | JSX.Element[];
 }
 
-function Modal({ title, children, show, onClose, closeText = "Close" }: ModalProps) {
+function Modal({ isOpen, onClose, closeText = "Close" }: ModalProps) {
   function handleBackgroundClick(event: MouseEvent) {
     const target = event.target as HTMLElement;
     if (target.classList.contains("modal-background")) {
@@ -16,34 +15,44 @@ function Modal({ title, children, show, onClose, closeText = "Close" }: ModalPro
     }
   }
 
-  if (!show) {
+  if (!isOpen) {
     return null;
   }
 
   return (
-    <div className="fixed z-10 inset-0 overflow-y-auto" onClick={handleBackgroundClick}>
-      <div className="flex items-center justify-center min-h-screen px-4 pt-6 pb-24 text-center sm:block sm:p-0">
-        <div className="fixed inset-0 transition-opacity">
-          <div className="modal-background absolute inset-0 bg-gray-500 opacity-75"></div>
-        </div>
-        <span className="hidden sm:(inline-block align-middle h-screen)"></span>
-        <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:(my-8 align-middle max-w-lg w-full)">
-          <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-            <div className="mt-3 text-center sm:(mt-0 ml-4 text-left)">
-              <h3 className="text-lg leading-6 font-medium text-gray-900">{title}</h3>
-              <div className="mt-2">{children}</div>
-            </div>
-          </div>
-          <div className="bg-gray-50 px-4 py-3 sm:(px-6 flex flex-row-reverse)">
-            <button
-              onClick={onClose}
-              type="button"
-              className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:(outline-none ring-2 ring-offset-2 ring-blue-500) sm:(ml-3 w-auto text-sm)"
-            >
-              {closeText}
-            </button>
-          </div>
-        </div>
+    <div class="fixed z-50 inset-0 overflow-y-auto" onClick={handleBackgroundClick}>
+      	<div class="flex items-center justify-center min-h-screen">
+			<div class="fixed inset-0 transition-opacity">
+				<div class="modal-background absolute inset-0 bg-gray-500 opacity-50"></div>
+			</div>
+			<span class="hidden sm:(inline-block align-middle h-screen)"></span>
+			<div class="inline-block align-bottom rounded-xl bg-white overflow-hidden shadow-xl transform transition-all relative">
+				<button 
+					class="absolute right-6 top-6 w-11 h-9 
+					border border-slate-300 bg-white rounded-lg 
+					flex items-center justify-center"
+					onClick={onClose}
+				>
+					<IconX class="w-6 h-6" />
+				</button>
+				<div class="max-w-xs md:max-w-lg xl:max-w-2xl">
+					<div 
+						class="bg-[#E5DECF] px-8 py-5 md:px-10 
+						md:py-8">
+						<p 
+							class="font-semibold text-black text-3xl"
+						>
+							Criar conta
+						</p>
+						<p 
+							class="mt-2 font-normal text-black text-base"
+						>
+							Preencha seus dados que em breve nosso time vai entrar em contato com você para terminar seu cadastro.
+						</p>
+					</div>
+					<SignupForm/>
+				</div>
+			</div>
       </div>
     </div>
   );

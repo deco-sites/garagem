@@ -1,1 +1,518 @@
-{"name":"Home","path":"/","sections":[{"__resolveType":"Header"},{"__resolveType":"site/sections/HeroBanner.tsx","banners":[{"backgroundColor":"#2A2A2A","placement":"left","button":[{"style":"Outline","href":"#","text":"Começar agora"}],"cta":[],"tagline":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab","title":"A única ferramenta  que o corretor precisa","description":"O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a","disableSpacing":{"top":false}},{"backgroundColor":"#C5DFFC","placement":"left","button":[{"style":"Outline","href":"#","text":"Começar agora"}],"cta":[],"title":"A única ferramenta  que o corretor precisa","description":"O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a","disableSpacing":{"top":false},"tagline":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab"},{"backgroundColor":"#E5DECF","placement":"left","button":[{"style":"Outline","href":"#","text":"Começar agora"}],"cta":[],"tagline":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab","title":"A única ferramenta  que o corretor precisa","description":"O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a","disableSpacing":{"top":false}}],"layout":"Default","setup":{"layout":"HeroBanner","dots":true,"autoplay":true,"interval":3.5,"startAt":0}},{"__resolveType":"site/sections/Features.tsx","slide":{"content":[{"button":[{"href":"#","text":"Saiba mais","icon":true}],"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520","title":"Organize seus clientes","description":"Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos.","backgroundColor":"#EBEFF2"},{"button":[{"text":"Saiba mais","href":"#","icon":true}],"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520","title":"Divulgue seus imóveis","description":"Cadastre os seus imóveis - aluguel, venda, primário ou secundário. Adapte os campos e dados para sua operação. Seu site será automaticamente gerado e todas opções de integração para divulgação disponíveis: Vivareal, Zap, QuintoAndar, Facebook ou Instagram.","backgroundColor":"#C5DFFC"},{"button":[{"href":"#","text":"Saiba mais","icon":true}],"title":"Feche mais negócios","description":"Foque no relacionamento com seus clientes e não se preocupe com o restante. Automatize mensagens de rotina e utilize serviços complementares como fotográfo, assessoria jurídica e  assessoria de financiamento.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/8ba546a3-6efb-414d-a365-105710aac2e8","backgroundColor":"#E5DECF"},{"button":[{"href":"#","text":"Saiba mais","icon":true}],"title":"Feche mais negócios","description":"Foque no relacionamento com seus clientes e não se preocupe com o restante. Automatize mensagens de rotina e utilize serviços complementares como fotográfo, assessoria jurídica e  assessoria de financiamento.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/8ba546a3-6efb-414d-a365-105710aac2e8","backgroundColor":"#E5DECF"},{"button":[{"href":"#","text":"Saiba mais","icon":true}],"title":"Feche mais negócios","description":"Foque no relacionamento com seus clientes e não se preocupe com o restante. Automatize mensagens de rotina e utilize serviços complementares como fotográfo, assessoria jurídica e  assessoria de financiamento.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/8ba546a3-6efb-414d-a365-105710aac2e8","backgroundColor":"#E5DECF"}]},"section":{"content":{"title":"O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta."}},"setup":{"layout":"Features","interval":3.5,"arrows":true,"autoplay":false,"startAt":0},"content":[{"content":[{"backgroundColor":"#C5DFFC","button":[{"href":"#","text":"Saiba mais"}],"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520","title":"Organize seus clientes","description":"Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos."},{"backgroundColor":"#C5DFFC","button":[{"href":"#","text":"Saiba mais"}],"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520","title":"Organize seus clientes","description":"Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos."},{"backgroundColor":"#E5DECF","button":[{"href":"#","text":"Saiba mais"}],"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520","title":"Organize seus clientes","description":"Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos."}]}]},{"__resolveType":"site/sections/FeaturesDetail.tsx","section":{"content":{"title":"Administração de anúncios de imóveis, site próprio e integrações para gerar mais leads em uma única ferramenta","backgroundColor":"#EBEFF2"}},"content":{"content":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Configure seu funil e separe contatos como achar mais adequado"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Tenha controle sobre quem é sincronizado"}]},"setup":{"interval":5,"layout":"right","autoplay":true},"slide":{"content":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Configure seu funil e separe contatos como achar mais adequado","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Tenha controle sobre quem é sincronizado","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"}]}},{"__resolveType":"site/sections/FeaturesDetail.tsx","section":{"content":{"title":"Eficiência e agilidade com automações e serviços disponíveis para fechar mais negócios ","backgroundColor":"#C5DFFC"}},"content":{"content":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Configure seu funil e separe contatos como achar mais adequado"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Tenha controle sobre quem é sincronizado"}]},"setup":{"interval":5,"layout":"left","autoplay":true},"slide":{"content":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Configure seu funil e separe contatos como achar mais adequado","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Tenha controle sobre quem é sincronizado","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"}]}},{"__resolveType":"site/sections/FeaturesDetail.tsx","section":{"content":{"title":"Eficiência e agilidade com automações e serviços disponíveis para fechar mais negócios ","backgroundColor":"#E5DECF"}},"content":{"content":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Configure seu funil e separe contatos como achar mais adequado"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Tenha controle sobre quem é sincronizado"}]},"setup":{"interval":5,"layout":"right","autoplay":true},"slide":{"content":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Configure seu funil e separe contatos como achar mais adequado","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec","text":"Tenha controle sobre quem é sincronizado","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"}]}},{"__resolveType":"website/sections/Rendering/Lazy.tsx","section":{"__resolveType":"site/sections/Tools.tsx","title":"<p><span style=\"color: rgb(164, 164, 164); font-size: 36pt\">Tenha inúmeras ferramentas em um único CRM,</span><span style=\"font-size: 36pt\"> </span><span style=\"color: rgb(42, 42, 42); font-size: 36pt\">com o menor preço do mercado</span></p>","cards":[{"list":[{"icon":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png","text":"Rodízio completo de atendimento"},{"icon":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png","text":"Gestão de contatos e leads"},{"icon":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png","text":"Imóveis recomendados por perfil do cliente"},{"icon":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png","text":"Integração com apps"},{"icon":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png","text":"Gestão de corretores de imóveis"}],"backgroundColor":"#EBEFF2","title":"<p><strong><span style=\"color: #6797cc; font-size: 18pt\">Para Corretores autônomos</span></strong></p>","subtitle":"Grátis","cta":{"href":"#","text":"Começar a usar"}},{"list":[{"icon":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png","text":"Rodízio completo de atendimento"},{"icon":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png","text":"Gestão de contatos e leads"},{"icon":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png","text":"Imóveis recomendados por perfil do cliente"},{"icon":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png","text":"Integração com apps"},{"icon":"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png","text":"Gestão de corretores de imóveis"}],"backgroundColor":"#E5DECF","title":"<p><strong><span style=\"color: rgb(153, 144, 123); font-size: 18pt\">Para Imobiliárias</span></strong></p>","subtitle":"Em breve","cta":{"href":"#","text":"Contratar"}}]}},{"__resolveType":"site/sections/Footer.tsx","links":[],"bottomLinks":[],"social":[{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/c8c41eaf-62bb-404e-8657-b48a7a8fbe31","href":"https://linkedin.com","label":"Linkedin"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3ee8e84c-ec9d-4c71-8239-0591697c4687","href":"https://facebook.com","label":"Facebook"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/a4c12e94-1ea2-4b2c-9f94-59b30d6c3ed6","href":"https://instagram.com","label":"Instagram"}],"subscribe":{},"logo":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab","alt":"Garagem"}}],"__resolveType":"website/pages/Page.tsx","seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx"}}
+{
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/HeroBanner.tsx",
+      "banners": [
+        {
+          "backgroundColor": "#2A2A2A",
+          "placement": "left",
+          "button": [
+            {
+              "style": "Outline",
+              "href": "#",
+              "text": "Começar agora"
+            }
+          ],
+          "cta": [],
+          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab",
+          "title": "A única ferramenta  que o corretor precisa",
+          "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a",
+          "disableSpacing": {
+            "top": false
+          }
+        },
+        {
+          "backgroundColor": "#C5DFFC",
+          "placement": "left",
+          "button": [
+            {
+              "style": "Outline",
+              "href": "#",
+              "text": "Começar agora"
+            }
+          ],
+          "cta": [],
+          "title": "A única ferramenta  que o corretor precisa",
+          "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a",
+          "disableSpacing": {
+            "top": false
+          },
+          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab"
+        },
+        {
+          "backgroundColor": "#E5DECF",
+          "placement": "left",
+          "button": [
+            {
+              "style": "Outline",
+              "href": "#",
+              "text": "Começar agora"
+            }
+          ],
+          "cta": [],
+          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab",
+          "title": "A única ferramenta  que o corretor precisa",
+          "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a",
+          "disableSpacing": {
+            "top": false
+          }
+        }
+      ],
+      "layout": "Default",
+      "setup": {
+        "layout": "HeroBanner",
+        "dots": true,
+        "autoplay": true,
+        "interval": 3.5,
+        "startAt": 0
+      }
+    },
+    {
+      "__resolveType": "site/sections/Features.tsx",
+      "slide": {
+        "content": [
+          {
+            "button": [
+              {
+                "href": "#",
+                "text": "Saiba mais",
+                "icon": true
+              }
+            ],
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
+            "title": "Organize seus clientes",
+            "description": "Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos.",
+            "backgroundColor": "#EBEFF2"
+          },
+          {
+            "button": [
+              {
+                "text": "Saiba mais",
+                "href": "#",
+                "icon": true
+              }
+            ],
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
+            "title": "Divulgue seus imóveis",
+            "description": "Cadastre os seus imóveis - aluguel, venda, primário ou secundário. Adapte os campos e dados para sua operação. Seu site será automaticamente gerado e todas opções de integração para divulgação disponíveis: Vivareal, Zap, QuintoAndar, Facebook ou Instagram.",
+            "backgroundColor": "#C5DFFC"
+          },
+          {
+            "button": [
+              {
+                "href": "#",
+                "text": "Saiba mais",
+                "icon": true
+              }
+            ],
+            "title": "Feche mais negócios",
+            "description": "Foque no relacionamento com seus clientes e não se preocupe com o restante. Automatize mensagens de rotina e utilize serviços complementares como fotográfo, assessoria jurídica e  assessoria de financiamento.",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/8ba546a3-6efb-414d-a365-105710aac2e8",
+            "backgroundColor": "#E5DECF"
+          },
+          {
+            "button": [
+              {
+                "href": "#",
+                "text": "Saiba mais",
+                "icon": true
+              }
+            ],
+            "title": "Feche mais negócios",
+            "description": "Foque no relacionamento com seus clientes e não se preocupe com o restante. Automatize mensagens de rotina e utilize serviços complementares como fotográfo, assessoria jurídica e  assessoria de financiamento.",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/8ba546a3-6efb-414d-a365-105710aac2e8",
+            "backgroundColor": "#E5DECF"
+          },
+          {
+            "button": [
+              {
+                "href": "#",
+                "text": "Saiba mais",
+                "icon": true
+              }
+            ],
+            "title": "Feche mais negócios",
+            "description": "Foque no relacionamento com seus clientes e não se preocupe com o restante. Automatize mensagens de rotina e utilize serviços complementares como fotográfo, assessoria jurídica e  assessoria de financiamento.",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/8ba546a3-6efb-414d-a365-105710aac2e8",
+            "backgroundColor": "#E5DECF"
+          }
+        ]
+      },
+      "section": {
+        "content": {
+          "title": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta."
+        }
+      },
+      "setup": {
+        "layout": "Features",
+        "interval": 3.5,
+        "arrows": true,
+        "autoplay": false,
+        "startAt": 0
+      },
+      "content": [
+        {
+          "content": [
+            {
+              "backgroundColor": "#C5DFFC",
+              "button": [
+                {
+                  "href": "#",
+                  "text": "Saiba mais"
+                }
+              ],
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
+              "title": "Organize seus clientes",
+              "description": "Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos."
+            },
+            {
+              "backgroundColor": "#C5DFFC",
+              "button": [
+                {
+                  "href": "#",
+                  "text": "Saiba mais"
+                }
+              ],
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
+              "title": "Organize seus clientes",
+              "description": "Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos."
+            },
+            {
+              "backgroundColor": "#E5DECF",
+              "button": [
+                {
+                  "href": "#",
+                  "text": "Saiba mais"
+                }
+              ],
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/bf57be48-5003-47cf-b909-619255926520",
+              "title": "Organize seus clientes",
+              "description": "Você conecta o seu WhatsApp e os seus contatos são sincronizados automaticamente. Escolha quais você quer integrar conversas ou não. Nossa IA anexará automaticamente dados, informações e documentos aos seus contatos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/FeaturesDetail.tsx",
+      "section": {
+        "content": {
+          "title": "Administração de anúncios de imóveis, site próprio e integrações para gerar mais leads em uma única ferramenta",
+          "backgroundColor": "#EBEFF2"
+        }
+      },
+      "content": {
+        "content": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Configure seu funil e separe contatos como achar mais adequado"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Tenha controle sobre quem é sincronizado"
+          }
+        ]
+      },
+      "setup": {
+        "interval": 5,
+        "layout": "right",
+        "autoplay": true
+      },
+      "slide": {
+        "content": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Configure seu funil e separe contatos como achar mais adequado",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Tenha controle sobre quem é sincronizado",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "site/sections/FeaturesDetail.tsx",
+      "section": {
+        "content": {
+          "title": "Eficiência e agilidade com automações e serviços disponíveis para fechar mais negócios ",
+          "backgroundColor": "#C5DFFC"
+        }
+      },
+      "content": {
+        "content": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Configure seu funil e separe contatos como achar mais adequado"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Tenha controle sobre quem é sincronizado"
+          }
+        ]
+      },
+      "setup": {
+        "interval": 5,
+        "layout": "left",
+        "autoplay": true
+      },
+      "slide": {
+        "content": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Configure seu funil e separe contatos como achar mais adequado",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Tenha controle sobre quem é sincronizado",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "site/sections/FeaturesDetail.tsx",
+      "section": {
+        "content": {
+          "title": "Eficiência e agilidade com automações e serviços disponíveis para fechar mais negócios ",
+          "backgroundColor": "#E5DECF"
+        }
+      },
+      "content": {
+        "content": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Configure seu funil e separe contatos como achar mais adequado"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Tenha controle sobre quem é sincronizado"
+          }
+        ]
+      },
+      "setup": {
+        "interval": 5,
+        "layout": "right",
+        "autoplay": true
+      },
+      "slide": {
+        "content": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Contatos e mensagens de WhatsApp e Instagram sincronizados automaticamente",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Configure seu funil e separe contatos como achar mais adequado",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/6742cfeb-4fce-4927-bec4-75e40e1c0eec",
+            "text": "Tenha controle sobre quem é sincronizado",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/cf3e910c-4c78-4468-aab0-5541ea2c2b61",
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/92f3af43-8adf-477c-9b63-2d5468233f91"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Tools.tsx",
+        "title": "<p><span style=\"color: rgb(164, 164, 164); font-size: 36pt\">Tenha inúmeras ferramentas em um único CRM,</span><span style=\"font-size: 36pt\"> </span><span style=\"color: rgb(42, 42, 42); font-size: 36pt\">com o menor preço do mercado</span></p>",
+        "cards": [
+          {
+            "list": [
+              {
+                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png",
+                "text": "Rodízio completo de atendimento"
+              },
+              {
+                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png",
+                "text": "Gestão de contatos e leads"
+              },
+              {
+                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png",
+                "text": "Imóveis recomendados por perfil do cliente"
+              },
+              {
+                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png",
+                "text": "Integração com apps"
+              },
+              {
+                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png",
+                "text": "Gestão de corretores de imóveis"
+              }
+            ],
+            "backgroundColor": "#EBEFF2",
+            "title": "<p><strong><span style=\"color: #6797cc; font-size: 18pt\">Para Corretores autônomos</span></strong></p>",
+            "subtitle": "Grátis",
+            "cta": {
+              "href": "#",
+              "text": "Começar a usar"
+            }
+          },
+          {
+            "list": [
+              {
+                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png",
+                "text": "Rodízio completo de atendimento"
+              },
+              {
+                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png",
+                "text": "Gestão de contatos e leads"
+              },
+              {
+                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png",
+                "text": "Imóveis recomendados por perfil do cliente"
+              },
+              {
+                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png",
+                "text": "Integração com apps"
+              },
+              {
+                "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/02c7f582-af49-4a54-9088-e900d4ef551d/computer.png",
+                "text": "Gestão de corretores de imóveis"
+              }
+            ],
+            "backgroundColor": "#E5DECF",
+            "title": "<p><strong><span style=\"color: rgb(153, 144, 123); font-size: 18pt\">Para Imobiliárias</span></strong></p>",
+            "subtitle": "Em breve",
+            "cta": {
+              "href": "#",
+              "text": "Contratar"
+            }
+          }
+        ],
+        "features": [
+          {
+            "features": [
+              {
+                "title": "Feature 1",
+                "iconOne": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/4d4de81d-a7c2-4a3c-a02a-441f79035a29/Frame-96051.svg",
+                "iconTwo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/be41f2c6-a5d8-4f48-abad-6ebcb0196fff/check-circle.svg"
+              },
+              {
+                "title": "Feature 1",
+                "iconOne": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/4d4de81d-a7c2-4a3c-a02a-441f79035a29/Frame-96051.svg",
+                "iconTwo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/be41f2c6-a5d8-4f48-abad-6ebcb0196fff/check-circle.svg"
+              },
+              {
+                "title": "Feature 1",
+                "iconOne": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/4d4de81d-a7c2-4a3c-a02a-441f79035a29/Frame-96051.svg",
+                "iconTwo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/be41f2c6-a5d8-4f48-abad-6ebcb0196fff/check-circle.svg"
+              },
+              {
+                "title": "Feature 1",
+                "iconOne": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/4d4de81d-a7c2-4a3c-a02a-441f79035a29/Frame-96051.svg",
+                "iconTwo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/be41f2c6-a5d8-4f48-abad-6ebcb0196fff/check-circle.svg"
+              },
+              {
+                "title": "Feature 1",
+                "iconOne": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/4d4de81d-a7c2-4a3c-a02a-441f79035a29/Frame-96051.svg",
+                "iconTwo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/be41f2c6-a5d8-4f48-abad-6ebcb0196fff/check-circle.svg"
+              },
+              {
+                "title": "Feature 1",
+                "iconOne": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/4d4de81d-a7c2-4a3c-a02a-441f79035a29/Frame-96051.svg",
+                "iconTwo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/garagem/be41f2c6-a5d8-4f48-abad-6ebcb0196fff/check-circle.svg"
+              }
+            ],
+            "title": "Titulo"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "site/sections/Footer.tsx",
+      "links": [],
+      "bottomLinks": [],
+      "social": [
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/c8c41eaf-62bb-404e-8657-b48a7a8fbe31",
+          "href": "https://linkedin.com",
+          "label": "Linkedin"
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3ee8e84c-ec9d-4c71-8239-0591697c4687",
+          "href": "https://facebook.com",
+          "label": "Facebook"
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/a4c12e94-1ea2-4b2c-9f94-59b30d6c3ed6",
+          "href": "https://instagram.com",
+          "label": "Instagram"
+        }
+      ],
+      "subscribe": {},
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab",
+        "alt": "Garagem"
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  }
+}
