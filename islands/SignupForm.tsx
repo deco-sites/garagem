@@ -1,6 +1,7 @@
 import { useForm, SubmitHandler } from "react-hook-form"
-import { yupResolver } from 'npm:@hookform/resolvers/yup';
+import { yupResolver } from 'npm:@hookform/resolvers/yup'
 import { string, object, InferType } from 'npm:yup'
+
 import "preact/debug";
 
 const emailRgx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -36,25 +37,24 @@ function SignupForm() {
     resolver: yupResolver(SignupSchema)
   });
 
-	const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
-		try {
-			const response = await fetch('https://hooks.zapier.com/hooks/catch/16331030/24oinhf', {
-				method: 'POST',
-				headers: {
-					'Access-Control-Allow-Origin': '*',
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify(data),
-			});
+  const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
+	try {
+		const response = await fetch('/api/proxy', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(data),
+		});
 
-			if (!response.ok) {
-				throw new Error('Falha ao enviar os dados!');
-			}
-
-			console.log('Dados enviados com sucesso:', data);
-		} catch (error) {
-			console.error('Erro ao enviar os dados:', error);
+		if (!response.ok) {
+			throw new Error('Failed to send data!');
 		}
+
+		console.log('Data sent successfully:', data);
+	} catch (error) {
+		console.error('Error sending data:', error);
+	}
 	};
 
   return (
@@ -174,7 +174,7 @@ function SignupForm() {
 					{...register('faturamentoMensal', {required: true})}
 				>
 					<option
-						value=""
+						value="nenhum"
 						selected
 						disabled  
 						hidden
@@ -183,27 +183,27 @@ function SignupForm() {
 						Escolha uma opção
 					</option>
 					<option 
-						value="R$10.000,00"
+						value="1000000"
 					>
 						Até R$10.000,00
 					</option>
 					<option 
-						value="50.000,00"
+						value="5000000"
 					>
 						Até R$50.000,00
 					</option>
 					<option 
-						value="100.000,00"
+						value="10000000"
 					>
 						Até R$100.000,00
 					</option>
 					<option 
-						value="200.000,00"
+						value="20000000"
 					>
 						Até R$200.000,00
 					</option>
 					<option 
-						value="200.000,00"
+						value="20000000"
 					>
 						Mais de R$200.000,00
 					</option>
@@ -222,7 +222,7 @@ function SignupForm() {
 					{...register('carteiraImovel', {required: true})}
 				>
 					<option
-						value=""
+						value="nenhum"
 						selected
 						disabled  
 						hidden

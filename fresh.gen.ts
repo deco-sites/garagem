@@ -3,7 +3,7 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
-import * as $api_signup from "./routes/api/signup.ts";
+import * as $api_proxy from "./routes/api/proxy.ts";
 import * as $Carousel from "./islands/Carousel.tsx";
 import * as $HeroCarousel from "./islands/HeroCarousel.tsx";
 import * as $ListCarousel from "./islands/ListCarousel.tsx";
@@ -15,7 +15,7 @@ import { type Manifest } from "$fresh/server.ts";
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
-    "./routes/api/signup.ts": $api_signup,
+    "./routes/api/proxy.ts": $api_proxy,
   },
   islands: {
     "./islands/Carousel.tsx": $Carousel,
