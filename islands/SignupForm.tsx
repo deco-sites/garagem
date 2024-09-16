@@ -1,3 +1,4 @@
+import { useState } from 'preact/hooks';
 import { useForm, SubmitHandler } from "react-hook-form"
 import { yupResolver } from 'npm:@hookform/resolvers/yup'
 import { string, object, InferType } from 'npm:yup'
@@ -32,29 +33,31 @@ const SignupSchema = object().shape({
 type FormData = InferType<typeof SignupSchema>;
 
 function SignupForm() {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
-	mode: 'onChange',
-    resolver: yupResolver(SignupSchema)
-  });
+	const [successMessage, setSuccessMessage] = useState<string | null>(null);
+	const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
+		mode: 'onChange',
+		resolver: yupResolver(SignupSchema)
+	});
 
-  const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
-	try {
-		const response = await fetch('/api/proxy', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(data),
-		});
+  	const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
+		try {
+			const response = await fetch('/api/proxy', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(data),
+			});
 
-		if (!response.ok) {
-			throw new Error('Failed to send data!');
+			if (!response.ok) {
+				throw new Error('Failed to send data!');
+			}
+			setSuccessMessage('Formulário enviado com sucesso!');
+			console.log('Dados enviados com sucesso:', data);
+		} catch (error) {
+			setSuccessMessage('Erro ao enviar os dados, tente novamente.');
+			console.error('Erro ao enviar os dados:', error);
 		}
-
-		console.log('Data sent successfully:', data);
-	} catch (error) {
-		console.error('Error sending data:', error);
-	}
 	};
 
   return (
@@ -266,15 +269,24 @@ function SignupForm() {
 				</p>
 			</label>
     	</div>
-      	<button 
-			type="submit" 
-			class="py-3.5 px-4 rounded-lg
-			bg-primary text-white text-sm
-			font-semibold shadow-custom
-			w-44 text-center self-end"
-		>
-			Cadastrar
-		</button>
+		<div class="flex justify-between">
+			<div class="w-6/12">
+				{successMessage && (
+					<p class={`${successMessage.includes('sucesso') ? 'text-green-500' : 'text-red-500'}`}>
+						{successMessage}
+					</p>
+				)}
+			</div>
+			<button 
+				type="submit"
+				class="py-3.5 px-4 rounded-lg
+				bg-primary text-white text-sm
+				font-semibold shadow-custom
+				w-44 text-center self-end"
+			>
+				Cadastrar
+			</button>
+		</div>
     </form>
   );
 }
