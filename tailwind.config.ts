@@ -20,8 +20,8 @@ export default {
       },
       keyframes: {
         sliding: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(100%) scaleX(1)' },
+          '0%': { transform: 'translateX(0) scaleX(0)' },
+          '100%': { transform: 'translateX(0) scaleX(1)' },
         },
         progress: {
           '0%': { transform: 'translateX(0) scaleX(0)' },

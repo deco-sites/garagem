@@ -44,7 +44,9 @@
     @apply h-1.5;
     border-radius: 0.375rem;
     animation: sliding var(--slide-interval) linear infinite;
+    background-color: var(--primary);
     @apply bg-primary;
+    transform-origin: left;
   }
 }
 
