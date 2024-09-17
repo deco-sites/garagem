@@ -13,7 +13,7 @@ export default {
       },
       animation: {
         sliding: "sliding 30s linear infinite",
-        progress: 'progress infinite 4s linear',
+        progress: 'progress 4s linear forwards',
       },
       boxShadow: {
         custom: "0 6px 12px 0px rgba(0,0,0,0.3)",
@@ -24,8 +24,8 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
         progress: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(100%) scaleX(1)' },
+          '0%': { transform: 'translateX(0) scaleX(0)' },
+          '100%': { transform: 'translateX(0) scaleX(1)' },
         },
       },
       transformOrigin: {
