@@ -43,7 +43,7 @@
     width: 100%;
     @apply h-1.5;
     border-radius: 0.375rem;
-    animation: progress var(--slide-interval) linear infinite;
+    animation: sliding var(--slide-interval) linear infinite;
     @apply bg-primary;
   }
 }
