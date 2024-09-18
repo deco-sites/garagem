@@ -1,4 +1,5 @@
 import SignupForm from "site/islands/SignupForm.tsx";
+import { useEffect } from "preact/hooks";
 import IconX from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/x.tsx"
 
 interface ModalProps {
@@ -8,12 +9,24 @@ interface ModalProps {
 }
 
 function Modal({ isOpen, onClose, closeText = "Close" }: ModalProps) {
+
   function handleBackgroundClick(event: MouseEvent) {
     const target = event.target as HTMLElement;
     if (target.classList.contains("modal-background")) {
       onClose();
     }
   }
+
+  	useEffect(() => {
+		if (isOpen) {
+		document.body.classList.add("overflow-hidden");
+		} else {
+		document.body.classList.remove("overflow-hidden");
+		}
+		return () => {
+		document.body.classList.remove("overflow-hidden");
+		};
+ 	}, [isOpen]);
 
   if (!isOpen) {
     return null;
@@ -23,7 +36,7 @@ function Modal({ isOpen, onClose, closeText = "Close" }: ModalProps) {
     <div class="fixed z-50 inset-0 overflow-y-auto" onClick={handleBackgroundClick}>
       	<div class="flex items-center justify-center min-h-screen">
 			<div class="fixed inset-0 transition-opacity">
-				<div class="modal-background absolute inset-0 bg-gray-500 opacity-50"></div>
+				<div class="modal-background absolute inset-0 bg-gray-500 opacity-50 no-scroll"></div>
 			</div>
 			<span class="hidden sm:(inline-block align-middle h-screen)"></span>
 			<div class="inline-block align-bottom rounded-xl bg-white overflow-hidden shadow-xl transform transition-all relative">

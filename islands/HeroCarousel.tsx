@@ -137,7 +137,7 @@ const DotsNavigation = () => (
                     <span class="sr-only">Go to slide {idx}</span>
                     {idx === currentSlide.value
                     ? <span class={`not-sr-only block w-20 h-1.5 rounded-lg animate-progress bg-white origin-left-right`} 
-                        style={{animation: `progress ${SLIDE_INTERVAL}s linear infinite`}}></span>
+                        style={{animation: `progress ${SLIDE_INTERVAL}s linear forwards`}}></span>
                     : <span class="not-sr-only block w-20 h-1.5 rounded-lg"></span>}
                 </button>
                 );

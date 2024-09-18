@@ -219,9 +219,9 @@ const Carousel = (props: CarouselProps) => {
               <span class="sr-only">Go to slide {idx}</span>
               {idx === currentSlide ? (
                 <span
-                  class={`not-sr-only block w-20 h-1.5 rounded-lg animate-progress bg-white origin-left-right`}
+                  class={`not-sr-only block w-20 h-1.5 rounded-lg animate-sliding bg-white origin-left-right`}
                   style={{
-                    animation: `progress ${SLIDE_INTERVAL}s linear infinite`,
+                    animation: `sliding ${SLIDE_INTERVAL}s linear forwards`,
                   }}
                 ></span>
               ) : (
