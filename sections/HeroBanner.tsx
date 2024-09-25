@@ -35,6 +35,12 @@ export interface Props {
   setup?: SliderSetup;
 }
 
+interface Title {
+  highlight?: string;
+  highlightColor?: Color;
+  title: string;
+}
+
 export interface CTA {
   id?: string;
   href: string;
@@ -44,8 +50,9 @@ export interface CTA {
 
 export interface Banners {
   backgroundColor?: Color;
+  dotColor?: Color;
   tagline?: ImageWidget;
-  title?: string;
+  title?: Title[];
   description?: string;
   image?: ImageWidget;
   button?: CTA[];
@@ -63,10 +70,15 @@ function HeroBanner({
   setup: { layout, interval, arrows, dots, autoplay, startAt } = {},
   banners = [
     {
-      title: "Here's an intermediate size heading you can edit",
+      title: [
+        { highlight: "Highlight", highlightColor: "#000000", title: "This text is fully editable and ready for your personal touch"}
+
+      ],
       description: "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
       tagline: "Tagline",
       image: DEFAULT_IMAGE,
+      backgroundColor: "bg-primary",
+      dotColor: "#FFFFFF",
       disableSpacing: {
         top: false,
         bottom: false,

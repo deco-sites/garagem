@@ -4,7 +4,7 @@
     "@cliffy/prompt": "jsr:@cliffy/prompt@^1.0.0-rc.5",
     "@core/asyncutil": "jsr:@core/asyncutil@^1.0.2",
     "@deco/durable": "jsr:@deco/durable@^0.5.3",
-    "@deco/warp": "jsr:@deco/warp@0.3.7",
+    "@deco/warp": "jsr:@deco/warp@0.3.8",
     "@hono/hono": "jsr:@hono/hono@^4.5.4",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
@@ -26,9 +26,9 @@
     "@std/streams": "jsr:@std/streams@^1.0.0",
     "@std/testing": "jsr:@std/testing@^1.0.0",
     "@zaubrik/djwt": "jsr:@zaubrik/djwt@^3.0.2",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.8/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.14/",
     "daisyui": "npm:daisyui@4.4.19",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.101.1/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.101.19/",
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
     "partytown/": "https://deno.land/x/partytown@0.4.8/",
     "preact": "npm:preact@10.23.1",
@@ -42,7 +42,8 @@
     "react-dom": "https://esm.sh/preact@10.19.3/compat",
     "@types/react": "https://esm.sh/preact@10.19.3/compat",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@^1.101.1"
+    "@deco/deco": "jsr:@deco/deco@1.99.3",
+    "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@^0.3.1"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",

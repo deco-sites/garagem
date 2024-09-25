@@ -1,6 +1,6 @@
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Link from "./Link.tsx";
+import ModalButton from "site/islands/ModalButton.tsx";
 
 export interface CTA {
   id?: string;
@@ -9,10 +9,16 @@ export interface CTA {
   style?: "Outline" | "Ghost";
 }
 
+type Title = {
+    highlight?: string;
+    highlightColor?: string;
+    title: string;
+};
+
 export interface Banners {
   backgroundColor?: Color;
   tagline?: ImageWidget;
-  title?: string;
+  title?: Title[];
   description?: string;
   image?: ImageWidget;
   placement?: "left" | "right";
@@ -58,11 +64,16 @@ function Slide(
                                         loading="lazy"
                                     />
                                 </figure>
-                                <h1 class="text-3xl md:text-5xl font-semibold text-white pb-7">{title}</h1>
+                                {title?.map((item) => (
+                                    <h1 class="text-3xl md:text-5xl font-semibold text-white pb-7">
+                                        <span style={{color: item?.highlightColor}}>{item?.highlight}</span>
+                                        {item?.title}
+                                    </h1>
+                                ))}
                                 <p class="text-white pb-7">{description}</p>
                                 <div class="flex space-x-4">
-                                    {button?.map((button) => (
-                                        <Link key={button.id} href={button.href} text={button.text} icon={false}/>
+                                    {button?.map((item, idx) => (
+                                        <ModalButton text={item.text} icon={false} key={idx}/>
                                     ))}
                                 </div>
                             </div>
