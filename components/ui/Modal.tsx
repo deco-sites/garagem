@@ -1,6 +1,7 @@
 import SignupForm from "site/islands/SignupForm.tsx";
 import { useEffect } from "preact/hooks";
-import IconX from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/x.tsx"
+import { createPortal } from "preact/compat"; // Importar o createPortal
+import IconX from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/x.tsx";
 
 interface ModalProps {
   isOpen: boolean;
@@ -32,7 +33,8 @@ function Modal({ isOpen, onClose, closeText = "Close" }: ModalProps) {
     return null;
   }
 
-  return (
+  // Renderizando o modal com Portal no body
+  return createPortal(
     <div class="fixed z-50 inset-0 overflow-y-auto" onClick={handleBackgroundClick}>
       	<div class="flex items-center justify-center min-h-screen">
 			<div class="fixed inset-0 transition-opacity">
@@ -67,7 +69,8 @@ function Modal({ isOpen, onClose, closeText = "Close" }: ModalProps) {
 				</div>
 			</div>
       </div>
-    </div>
+    </div>,
+    document.body // Aqui, o portal vai renderizar o modal dentro do body
   );
 }
 
