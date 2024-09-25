@@ -20,12 +20,19 @@
           ],
           "cta": [],
           "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab",
-          "title": "A única ferramenta  que o corretor precisa",
+          "title": [
+            {
+              "highlightColor": "#E5DECF",
+              "highlight": "A única ferramenta ",
+              "title": "que o corretor precisa"
+            }
+          ],
           "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a",
           "disableSpacing": {
             "top": false
-          }
+          },
+          "dotColor": "#FFFFFF"
         },
         {
           "backgroundColor": "#C5DFFC",
@@ -38,13 +45,20 @@
             }
           ],
           "cta": [],
-          "title": "A única ferramenta  que o corretor precisa",
+          "title": [
+            {
+              "highlightColor": "#5C5C5C",
+              "highlight": "A única ferramenta ",
+              "title": "que o corretor precisa"
+            }
+          ],
           "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a",
           "disableSpacing": {
             "top": false
           },
-          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab"
+          "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab",
+          "dotColor": "#6797CC"
         },
         {
           "backgroundColor": "#E5DECF",
@@ -58,12 +72,19 @@
           ],
           "cta": [],
           "tagline": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/fe9fe465-9134-4022-bd52-0b990cf02eab",
-          "title": "A única ferramenta  que o corretor precisa",
+          "title": [
+            {
+              "highlightColor": "#5C5C5C",
+              "highlight": "A única ferramenta",
+              "title": "que o corretor precisa"
+            }
+          ],
           "description": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta.",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12265/3220e562-c7a6-4f18-8e0b-a4ab9a94dd4a",
           "disableSpacing": {
             "top": false
-          }
+          },
+          "dotColor": "#99907B"
         }
       ],
       "layout": "Default",

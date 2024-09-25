@@ -1,5 +1,4 @@
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
-import ModalButton from "../islands/ModalButton.tsx";
 
 export interface CTA {
   id?: string;

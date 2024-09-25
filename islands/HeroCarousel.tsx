@@ -12,13 +12,20 @@ export interface CTA {
   style?: "Outline" | "Ghost";
 }
 
+type Title = {
+    highlight?: string;
+    highlightColor?: Color;
+    title: string;
+};
+
 type SlideProps = {
     class?: string;
     key?: number;
     data: {
         backgroundColor?: Color;
+        dotColor?: string;
         tagline?: ImageWidget;
-        title?: string;
+        title?: Title[];
         description?: string;
         image?: ImageWidget;
         placement?: "left" | "right";
@@ -136,8 +143,8 @@ const DotsNavigation = () => (
                 >
                     <span class="sr-only">Go to slide {idx}</span>
                     {idx === currentSlide.value
-                    ? <span class={`not-sr-only block w-20 h-1.5 rounded-lg animate-progress bg-white origin-left-right`} 
-                        style={{animation: `progress ${SLIDE_INTERVAL}s linear forwards`}}></span>
+                    ? <span class={`not-sr-only block w-20 h-1.5 rounded-lg animate-progress origin-left-right`} 
+                        style={{animation: `progress ${SLIDE_INTERVAL}s linear forwards`, background: _item.dotColor}}></span>
                     : <span class="not-sr-only block w-20 h-1.5 rounded-lg"></span>}
                 </button>
                 );
