@@ -19,11 +19,8 @@ function ModalButton(
             <button
                 {...otherProps}
                 onClick={openModal}
-                class={`py-2.5 px-4 rounded-lg text-primary
-                    bg-white text-primary text-sm
-                    font-semibold shadow-custom flex items-center justify-between`}
             >
-            {icon && <IconArrowDown />} {text}
+                {icon && <IconArrowDown />} {text}
             </button>
             <Modal isOpen={isModalOpen} onClose={closeModal} />
         </>
