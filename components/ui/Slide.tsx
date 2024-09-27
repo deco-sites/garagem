@@ -73,7 +73,15 @@ function Slide(
                                 <p class="text-white pb-7">{description}</p>
                                 <div class="flex space-x-4">
                                     {button?.map((item, idx) => (
-                                        <ModalButton text={item.text} icon={false} key={idx}/>
+                                        <ModalButton 
+                                            text={item.text} 
+                                            icon={false} 
+                                            key={idx}
+                                            class="py-3 px-4 rounded-lg w-36 bg-white 
+                                            text-base text-sm text-center text-base
+                                            font-semibold shadow-custom flex items-center 
+                                            justify-center"
+                                        />
                                     ))}
                                 </div>
                             </div>

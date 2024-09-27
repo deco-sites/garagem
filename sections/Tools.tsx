@@ -1,4 +1,5 @@
 import type { ImageWidget, Color } from "apps/admin/widgets.ts";
+import ModalButton from "site/islands/ModalButton.tsx";
 
 export interface CTA {
   id?: string;
@@ -140,9 +141,14 @@ export default function Tools({
                         
                         ))}
                         </div>
-                        <button class="py-2.5 px-4 rounded-lg text-primary w-full md:w-44 bg-primary text-white text-sm text-center font-semibold shadow-custom ">
-                            {card.cta.text}
-                        </button>
+                        <ModalButton 
+                            text={card.cta.text} 
+                            icon={false} key={index} 
+                            class="py-3 px-4 rounded-lg w-44 bg-primary 
+                            text-white text-sm text-center text-base
+                            font-semibold shadow-custom flex items-center 
+                            justify-center"
+                        />
                     </div>
                 </div>
             ))}

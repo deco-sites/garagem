@@ -37,7 +37,15 @@ export default function Header({
         <Image src={logo.src ?? ""} alt={logo.alt} width={61} height={61}/>
         <div className="flex space-x-4">
           {navigation.buttons.map((button, idx) => (
-            <ModalButton text={button.text} icon={false} key={idx}/>
+            <ModalButton 
+              text={button.text} 
+              icon={false} 
+              key={idx}
+              class="py-2.5 px-4 rounded-lg w-36 bg-white 
+                text-base text-sm text-center text-base
+                font-semibold shadow-custom flex items-center 
+                justify-center"
+            />
           ))}
         </div>
       </div>
