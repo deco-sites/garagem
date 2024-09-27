@@ -169,7 +169,13 @@
       },
       "section": {
         "content": {
-          "title": "O Garagem centraliza, integra e simplifica tudo o que é importante para o corretor em uma única ferramenta."
+          "title": [
+            {
+              "highlightColor": "#A4A4A4",
+              "highlight": "O Garagem centraliza, integra e simplifica tudo o que é ",
+              "title": "importante para o corretor em uma única ferramenta."
+            }
+          ]
         }
       },
       "setup": {
@@ -226,7 +232,13 @@
       "__resolveType": "site/sections/FeaturesDetail.tsx",
       "section": {
         "content": {
-          "title": "Administração de anúncios de imóveis, site próprio e integrações para gerar mais leads em uma única ferramenta",
+          "title": [
+            {
+              "highlightColor": "#5C5C5C",
+              "highlight": "Organize seus contatos, leads, clientes, dados e documentos ",
+              "title": "integrado com WhatsApp e totalmente customizado"
+            }
+          ],
           "backgroundColor": "#EBEFF2"
         }
       },
@@ -284,7 +296,13 @@
       "__resolveType": "site/sections/FeaturesDetail.tsx",
       "section": {
         "content": {
-          "title": "Eficiência e agilidade com automações e serviços disponíveis para fechar mais negócios ",
+          "title": [
+            {
+              "highlightColor": "#5C5C5C",
+              "highlight": "Administração de anúncios de imóveis, site próprio e integrações ",
+              "title": "para gerar mais leads em uma única ferramenta"
+            }
+          ],
           "backgroundColor": "#C5DFFC"
         }
       },
@@ -342,7 +360,13 @@
       "__resolveType": "site/sections/FeaturesDetail.tsx",
       "section": {
         "content": {
-          "title": "Eficiência e agilidade com automações e serviços disponíveis para fechar mais negócios ",
+          "title": [
+            {
+              "highlightColor": "#5C5C5C",
+              "highlight": "Eficiência e agilidade com automações e serviços disponíveis ",
+              "title": "para fechar mais negócios"
+            }
+          ],
           "backgroundColor": "#E5DECF"
         }
       },
@@ -400,7 +424,13 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Tools.tsx",
-        "title": "<p><span style=\"color: rgb(164, 164, 164); font-size: 36pt\">Tenha inúmeras ferramentas em um único CRM,</span><span style=\"font-size: 36pt\"> </span><span style=\"color: rgb(42, 42, 42); font-size: 36pt\">com o menor preço do mercado</span></p>",
+        "title": [
+          {
+            "highlightColor": "#A4A4A4",
+            "highlight": "Tenha inúmeras ferramentas em um único CRM, ",
+            "title": "com o menor preço do mercado"
+          }
+        ],
         "cards": [
           {
             "list": [

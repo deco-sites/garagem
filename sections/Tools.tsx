@@ -21,6 +21,12 @@ export interface Features {
     }[];
 }
 
+type Title = {
+    highlight?: string;
+    highlightColor?: Color;
+    title: string;
+};
+
 export interface Cards {
     /** @format rich-text */
     title: string;
@@ -32,13 +38,19 @@ export interface Cards {
 
 export interface Props {
     /** @format rich-text */
-    title?: string;
+    title?: Title[];
     cards?: Cards[];
     features?: Features[];
 }
 
 export default function Tools({
-    title = "Tenha inúmeras ferramentas em um único CRM, com o menor preço do mercado",
+    title = [
+        { 
+            highlight: "Tenha inúmeras ferramentas em um único CRM,", 
+            highlightColor: "#A4A4A4", 
+            title: "com o menor preço do mercado"
+        }
+    ],
     cards = [
         {
             title: "Para Corretores autônomos",
@@ -125,7 +137,13 @@ export default function Tools({
 }: Props) {
   return (
     <div class="container mx-auto px-4 pt-14 md:py-24 md:px-0">
-        <div class="leading-tight font-semibold text-3xl " dangerouslySetInnerHTML={{ __html: title }} />
+        {title?.map((item, idx) => (
+            <h1 key={idx}
+                class="text-3xl md:text-5xl font-semibold text-primary pb-7">
+                <span style={{color: item?.highlightColor}}>{item?.highlight}</span>
+                {item?.title}
+            </h1>
+        ))}
         <div class="crads grid grid-cols-1 md:grid-cols-2 gap-6 py-14">
             {cards.map((card, index) => (
                 <div key={index} class="card-item flex flex-col justify-between bg-white py-10 px-6 md:px-12 rounded-xl w-full" style={{backgroundColor: card.backgroundColor}}>
