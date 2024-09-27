@@ -8,7 +8,7 @@ import Carousel  from "site/islands/Carousel.tsx";
  */
 export interface Section {
   content?: {
-    title?: string;
+    title?: Title[];
   };
 }
 export interface Features {
@@ -55,6 +55,11 @@ interface SliderSetup {
   */
   startAt?: number;
 }
+interface Title {
+  highlight?: string;
+  highlightColor?: Color;
+  title: string;
+}
 
 export interface Props {
   title?: string;
@@ -75,9 +80,13 @@ function Features(
       <div className="container mx-auto">
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 items-center relative">
           <div className="section-content max-w-72 md:max-w-full">
-            <h2 class="text-3xl md:text-5xl font-semibold">
-              {section.content?.title}
-            </h2>
+            {section?.content?.title?.map((item, idx) => (
+              <h1 key={idx}
+                  class="text-3xl md:text-5xl font-semibold text-primary pb-7">
+                  <span style={{color: item?.highlightColor}}>{item?.highlight}</span>
+                  {item?.title}
+              </h1>
+            ))}
           </div>
           <Carousel
             position="relative"

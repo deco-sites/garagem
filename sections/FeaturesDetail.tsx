@@ -2,10 +2,17 @@ import type { ImageWidget, Color } from "apps/admin/widgets.ts";
 import ListCarousel  from "site/islands/ListCarousel.tsx";
 export interface Section {
     content?: {
-        title?: string;
+        title?: Title[];
         backgroundColor?: Color;
     };
 }
+
+type Title = {
+    highlight?: string;
+    highlightColor?: Color;
+    title: string;
+};
+
 export interface FeaturesDetail {
     content?: {
         imageDesktop?: ImageWidget;
@@ -46,9 +53,13 @@ function FeaturesDetail(
     return (
         <div class="py-24" style={`background-color: ${backgroundColor}`}>
             <div className="container px-4 lg:px-0 flex flex-col">
-                <h1 class="text-3xl md:text-5xl font-semibold">
-                    {title}
-                </h1>
+                {title?.map((item, idx) => (
+                    <h1 key={idx}
+                        class="text-3xl md:text-5xl font-semibold text-primary pb-7">
+                        <span style={{color: item?.highlightColor}}>{item?.highlight}</span>
+                        {item?.title}
+                    </h1>
+                ))}
                 <div className="py-14">
                     <ListCarousel
                         data={content}
