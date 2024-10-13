@@ -1,6 +1,6 @@
 {
   "imports": {
-    "$fresh/": "https://deno.land/x/fresh@1.6.8/",
+    "$fresh/": "https://deno.land/x/fresh@1.7.2/",
     "@cliffy/prompt": "jsr:@cliffy/prompt@^1.0.0-rc.5",
     "@core/asyncutil": "jsr:@core/asyncutil@^1.0.2",
     "@deco/durable": "jsr:@deco/durable@^0.5.3",
@@ -31,7 +31,7 @@
     "deco/": "https://denopkg.com/deco-cx/deco@1.101.19/",
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
     "partytown/": "https://deno.land/x/partytown@0.4.8/",
-    "preact": "npm:preact@10.23.1",
+    "preact": "https://esm.sh/preact@10.22.0",
     "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
     "simple-git": "npm:simple-git@^3.25.0",
     "site/": "./",
@@ -43,7 +43,8 @@
     "@types/react": "https://esm.sh/preact@10.19.3/compat",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
     "@deco/deco": "jsr:@deco/deco@1.99.3",
-    "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@^0.3.1"
+    "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@^0.3.1",
+    "preact/": "https://esm.sh/preact@10.22.0/"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
@@ -62,9 +63,7 @@
     "dev": "deno run -A --env --unstable --unstable-hmr dev.ts",
     "reload": "deno cache -r https://deco.cx/run"
   },
-  "githooks": {
-    "pre-commit": "check"
-  },
+  "githooks": { "pre-commit": "check" },
   "exclude": [
     "node_modules",
     "static/",
@@ -73,15 +72,8 @@
     "**/_fresh/*",
     ".deco/**"
   ],
-  "lint": {
-    "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
-    }
-  },
-  "nodeModulesDir": false,
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
+  "nodeModulesDir": "none",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact",

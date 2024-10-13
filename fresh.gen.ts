@@ -10,7 +10,7 @@ import * as $ListCarousel from "./islands/ListCarousel.tsx";
 import * as $ModalButton from "./islands/ModalButton.tsx";
 import * as $Select from "./islands/Select.tsx";
 import * as $SignupForm from "./islands/SignupForm.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
